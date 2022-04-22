@@ -159,18 +159,30 @@ body {
     padding-right: 16px; }
   .container .p-0 {
     padding: 0; }
+  .container .mb-15 {
+    margin-bottom: 15px; }
+  .container .mt-15 {
+    margin-top: 15px; }
   .container .mb-0 {
     margin-bottom: 0 !important; }
   .container .font-700 {
     font-weight: 700; }
+  .container .font-600 {
+    font-weight: 600; }
   .container .font-500 {
     font-weight: 500; }
+  .container .font-400 {
+    font-weight: 400; }
   .container .font-300 {
     font-weight: 300; }
   .container .font-30 {
     font-size: 30px; }
+  .container .font-18 {
+    font-size: 18px; }
   .container .font-16 {
     font-size: 16px; }
+  .container .font-14 {
+    font-size: 14px; }
   .container .align-self-center {
     align-self: center !important; }
   .container .color-fff {
@@ -263,10 +275,15 @@ body {
     font-size: 24px;
     margin-bottom: 14px;
     color: #0096a7; }
-  .card-label--status {
-    font-weight: bold;
-    font-size: 14px;
-    margin-bottom: 10px; }
+  .card-label {
+    color: rgba(0, 0, 0, 0.5) !important;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px; }
+    .card-label--status {
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 10px; }
   .card-block {
     color: #6c757d; }
   .card .choose {

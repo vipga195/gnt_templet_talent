@@ -103,15 +103,26 @@ body {
     .p-0 {
         padding: 0;
     }
-
+    .mb-15 {
+        margin-bottom: 15px;
+    }
+    .mt-15 {
+        margin-top: 15px;
+    }
     .mb-0 {
         margin-bottom: 0 !important;
     }
     .font-700 {
         font-weight: 700;
     }
+    .font-600 {
+        font-weight: 600;
+    }
     .font-500 {
         font-weight: 500;
+    }
+    .font-400 {
+        font-weight: 400;
     }
     .font-300 {
         font-weight: 300;
@@ -119,8 +130,14 @@ body {
     .font-30 {
         font-size: 30px;
     }
+    .font-18 {
+        font-size: 18px;
+    }
     .font-16 {
         font-size: 16px;
+    }
+    .font-14 {
+        font-size: 14px;
     }
     .align-self-center {
         align-self: center !important;
@@ -240,6 +257,10 @@ body {
         color: #0096a7;
     }
     &-label {
+        color: rgba(0, 0, 0, 0.5) !important;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 26px;
         &--status {
             font-weight: bold;
             font-size: 14px;
