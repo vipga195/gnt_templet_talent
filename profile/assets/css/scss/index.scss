@@ -67,8 +67,8 @@ body {
 }
 
 .container {
-    max-width: 1200px;
-    width: 100%;
+    width: 1200px;
+    // width: 100%;
     margin: 0 auto;
     padding: 0 15px;
 
@@ -209,6 +209,9 @@ body {
         .icon {
             max-width: 10px;
             margin-right: 0.5rem;
+            .marker {
+                width: 10.5px;
+            }
         }
     }
     .progress-circle {
@@ -261,7 +264,7 @@ body {
         font-weight: 300;
         font-size: 16px;
         line-height: 26px;
-        &--status {
+        &--item {
             font-weight: bold;
             font-size: 14px;
             margin-bottom: 10px;
@@ -321,6 +324,9 @@ body {
             .icon {
                 margin-right: 0.5rem;
                 max-width: 17.5px;
+                svg {
+                    width: 100%;
+                }
             }
         }
         &-money {
@@ -361,7 +367,7 @@ body {
             }
         }
     }
-    .status {
+    .item {
         margin-top: 16px;
         &:first-child {
             margin-top: 0;
@@ -395,20 +401,18 @@ body {
             background: #fff;
             margin-right: 4px;
             color: #117a8b;
-            img {
-                width: 30px;
-                &.phone {
-                    width: 10px;
-                }
-                &.envelope {
-                    width: 16px;
-                }
-                &.user {
-                    width: 20px;
-                }
-                &.birthday {
-                    width: 14px;
-                }
+            width: 30px;
+            .phone {
+                width: 10px;
+            }
+            .envelope {
+                width: 16px;
+            }
+            .user {
+                width: 20px;
+            }
+            .birthday {
+                width: 14px;
             }
         }
     }

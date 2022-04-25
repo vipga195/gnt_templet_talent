@@ -56,8 +56,7 @@ body {
   background-size: 22px 22px; }
 
 .container {
-  max-width: 1200px;
-  width: 100%;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 15px; }
   .container .row {
@@ -236,6 +235,8 @@ body {
     .content .location .icon {
       max-width: 10px;
       margin-right: 0.5rem; }
+      .content .location .icon .marker {
+        width: 10.5px; }
   .content .progress-circle {
     margin: 1.5rem auto;
     width: 150px;
@@ -280,7 +281,7 @@ body {
     font-weight: 300;
     font-size: 16px;
     line-height: 26px; }
-    .card-label--status {
+    .card-label--item {
       font-weight: bold;
       font-size: 14px;
       margin-bottom: 10px; }
@@ -332,6 +333,8 @@ body {
       .card .salary-label .icon {
         margin-right: 0.5rem;
         max-width: 17.5px; }
+        .card .salary-label .icon svg {
+          width: 100%; }
     .card .salary-money {
       display: inline;
       font-size: 20px;
@@ -363,9 +366,9 @@ body {
       position: relative; }
       .card .bar-language-profile-item-level {
         background: #117a8b; }
-  .card .status {
+  .card .item {
     margin-top: 16px; }
-    .card .status:first-child {
+    .card .item:first-child {
       margin-top: 0; }
   .card .process > span {
     font-size: 14px; }
@@ -385,17 +388,16 @@ body {
       line-height: 30px;
       background: #fff;
       margin-right: 4px;
-      color: #117a8b; }
-      .card .custom-width .icon img {
-        width: 30px; }
-        .card .custom-width .icon img.phone {
-          width: 10px; }
-        .card .custom-width .icon img.envelope {
-          width: 16px; }
-        .card .custom-width .icon img.user {
-          width: 20px; }
-        .card .custom-width .icon img.birthday {
-          width: 14px; }
+      color: #117a8b;
+      width: 30px; }
+      .card .custom-width .icon .phone {
+        width: 10px; }
+      .card .custom-width .icon .envelope {
+        width: 16px; }
+      .card .custom-width .icon .user {
+        width: 20px; }
+      .card .custom-width .icon .birthday {
+        width: 14px; }
   .card .job {
     margin-top: 0.5rem;
     margin-bottom: 0.25rem;
