@@ -476,12 +476,42 @@ body {
     border-radius: 4px;
     align-items: center;
     padding: 1.5rem 0; }
+    .content .tracking.step-1 .step-1 {
+      opacity: 1; }
     .content .tracking.step-1 ~ .step-screening {
       display: block; }
+    .content .tracking.step-2 .step-1 {
+      opacity: 1; }
+    .content .tracking.step-2 .step-2 {
+      opacity: 1; }
     .content .tracking.step-2 ~ .step-interview {
       display: block; }
+    .content .tracking.step-3 .step-1 {
+      opacity: 1; }
+    .content .tracking.step-3 .step-2 {
+      opacity: 1; }
+    .content .tracking.step-3 .step-3 {
+      opacity: 1; }
     .content .tracking.step-3 ~ .step-offer {
       display: block; }
+    .content .tracking.step-4 .step-1 {
+      opacity: 1; }
+    .content .tracking.step-4 .step-2 {
+      opacity: 1; }
+    .content .tracking.step-4 .step-3 {
+      opacity: 1; }
+    .content .tracking.step-4 .step-4 {
+      opacity: 1; }
+    .content .tracking.step-5 .step-1 {
+      opacity: 1; }
+    .content .tracking.step-5 .step-2 {
+      opacity: 1; }
+    .content .tracking.step-5 .step-3 {
+      opacity: 1; }
+    .content .tracking.step-5 .step-4 {
+      opacity: 1; }
+    .content .tracking.step-5 .step-5 {
+      opacity: 1; }
     .content .tracking-step {
       width: 100%;
       display: flex;

@@ -532,18 +532,47 @@ body {
         padding: 1.5rem 0;
         &.step {
             &-1 {
+                @for $i from 1 to 2 {
+                    .step-#{$i} {
+                        opacity: 1;
+                    }
+                }
                 ~ .step-screening {
                     display: block;
                 }
             }
             &-2 {
+                @for $i from 1 to 3 {
+                    .step-#{$i} {
+                        opacity: 1;
+                    }
+                }
                 ~ .step-interview {
                     display: block;
                 }
             }
             &-3 {
+                @for $i from 1 to 4 {
+                    .step-#{$i} {
+                        opacity: 1;
+                    }
+                }
                 ~ .step-offer {
                     display: block;
+                }
+            }
+            &-4 {
+                @for $i from 1 to 5 {
+                    .step-#{$i} {
+                        opacity: 1;
+                    }
+                }
+            }
+            &-5 {
+                @for $i from 1 to 6 {
+                    .step-#{$i} {
+                        opacity: 1;
+                    }
                 }
             }
         }
