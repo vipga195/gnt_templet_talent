@@ -403,5 +403,7 @@ body {
     margin-bottom: 0.25rem;
     font-weight: 700 !important;
     color: #6c757d; }
+  .card .list-unstyled {
+    display: flex; }
 
 /*# sourceMappingURL=index.css.map */
