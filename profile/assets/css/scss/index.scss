@@ -262,6 +262,30 @@ body {
     .infomation {
         padding-top: 0.75rem;
     }
+    .profile-name {
+        h5 {
+            display: inline-block;
+        }
+
+        .icon {
+            width: 13.5px;
+            margin-right: 0.25rem;
+            margin-bottom: 1px;
+        }
+        &:not(:first-child) {
+            margin-top: 0.5rem;
+        }
+    }
+    .major {
+        &-item {
+            display: flex;
+            align-items: flex-start;
+        }
+        .icon {
+            width: 15px;
+            margin-right: 7px;
+        }
+    }
 }
 .card {
     background: #fff;
@@ -402,15 +426,7 @@ body {
             @extend .font-14;
         }
     }
-    .profile-name {
-        h5 {
-            display: inline-block;
-        }
-        span {
-            display: inline-block;
-            float: right;
-        }
-    }
+
     .custom-width {
         min-width: 75px;
         line-height: 13px;

@@ -274,6 +274,20 @@ body {
     z-index: 1; }
   .content .infomation {
     padding-top: 0.75rem; }
+  .content .profile-name h5 {
+    display: inline-block; }
+  .content .profile-name .icon {
+    width: 13.5px;
+    margin-right: 0.25rem;
+    margin-bottom: 1px; }
+  .content .profile-name:not(:first-child) {
+    margin-top: 0.5rem; }
+  .content .major-item {
+    display: flex;
+    align-items: flex-start; }
+  .content .major .icon {
+    width: 15px;
+    margin-right: 7px; }
 
 .card {
   background: #fff;
@@ -380,11 +394,6 @@ body {
     margin-top: 8px; }
     .card .item:first-child {
       margin-top: 0; }
-  .card .profile-name h5 {
-    display: inline-block; }
-  .card .profile-name span {
-    display: inline-block;
-    float: right; }
   .card .custom-width {
     min-width: 75px;
     line-height: 13px; }
