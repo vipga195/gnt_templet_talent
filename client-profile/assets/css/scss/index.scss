@@ -1,5 +1,38 @@
 @import "./mixin/index.scss";
 
+$width: 1200px;
+//font
+.font-36 {
+    font-size: 36px;
+}
+.font-30 {
+    font-size: 30px;
+}
+.font-24 {
+    font-size: 24px;
+}
+.font-20 {
+    font-size: 20px;
+}
+.font-18 {
+    font-size: 18px;
+}
+.font-16 {
+    font-size: 16px;
+}
+.font-14 {
+    font-size: 14px;
+}
+.font-12 {
+    font-size: 12px;
+}
+// line
+.line-28 {
+    line-height: 28px;
+}
+.line-26 {
+    line-height: 26px;
+}
 body {
     * {
         outline: 0 !important;
@@ -20,38 +53,32 @@ body {
     }
     p {
         margin: 0px;
-        font-size: 16px;
-        line-height: 26px;
+        @extend .font-16;
+        @extend .line-26;
         font-weight: 300;
         color: #022629;
     }
     h2 {
         margin: 0px;
-        font-size: 36px;
+        @extend .font-36;
         line-height: 46px;
     }
     h3 {
         margin: 0px;
-        font-size: 30px;
+        @extend .font-30;
         line-height: 40px;
     }
     h4 {
         margin: 0px;
-        font-size: 24px;
+        @extend .font-24;
         line-height: 34px;
     }
     h5 {
         margin: 0px;
-        font-size: 18px;
+        @extend .font-18;
         line-height: 28px;
     }
-    p {
-        margin: 0px;
-        font-size: 16px;
-        line-height: 26px;
-        font-weight: 300;
-        color: #022629;
-    }
+
     hr {
         box-sizing: content-box;
         height: 0;
@@ -78,7 +105,7 @@ body {
 }
 
 .container {
-    width: 1200px;
+    width: $width;
     // width: 100%;
     margin: 0 auto;
     padding: 0 15px;
@@ -104,6 +131,9 @@ body {
     }
     .w-100 {
         width: 100%;
+    }
+    .h-100 {
+        height: 100%;
     }
     .pl-0 {
         padding-left: 0;
@@ -162,20 +192,12 @@ body {
     .font-300 {
         font-weight: 300;
     }
-    .font-30 {
-        font-size: 30px;
-    }
-    .font-18 {
-        font-size: 18px;
-    }
-    .font-16 {
-        font-size: 16px;
-    }
-    .font-14 {
-        font-size: 14px;
-    }
+
     .align-self-center {
         align-self: center !important;
+    }
+    .align-items-center {
+        align-items: center !important;
     }
     .color-fff {
         color: #ffffff;
@@ -194,6 +216,11 @@ body {
     }
     .color-01707b {
         color: #01707b;
+    }
+
+    .float-right {
+        float: right;
+        margin-left: auto;
     }
     .icon {
         display: inline-flex;
@@ -216,7 +243,7 @@ body {
         margin-top: 12px;
         border-radius: 4px;
         padding: 12px;
-        font-size: 16px;
+        @extend .font-16;
         border: 2px solid #e2f5f8;
         background: #e2f5f8;
     }
@@ -243,18 +270,18 @@ body {
     &-title {
         display: inline-block;
         font-weight: bold;
-        font-size: 24px;
+        @extend .font-24;
         margin-bottom: 14px;
         color: #0096a7;
     }
     &-label {
         color: rgba(0, 0, 0, 0.5) !important;
         font-weight: 300;
-        font-size: 16px;
-        line-height: 26px;
+        @extend .font-16;
+        @extend .line-26;
         &--item {
             font-weight: bold;
-            font-size: 14px;
+            @extend .font-14;
             margin-bottom: 10px;
         }
     }
@@ -308,7 +335,7 @@ body {
 
         width: 150px;
         height: 150px;
-        font-size: 30px;
+        @extend .font-30;
         color: #161616;
         border-radius: 50%;
         overflow: hidden;
@@ -360,7 +387,7 @@ body {
             display: inline-block;
             background: #f8f9fa;
             padding: 6px 14px;
-            font-size: 14px;
+            @extend .font-14;
             border-radius: 2px;
             color: #6c757d;
             margin-right: 8px;
@@ -392,7 +419,7 @@ body {
         &-label {
             display: flex;
             font-weight: bold;
-            font-size: 14px;
+            @extend .font-14;
             margin-bottom: 0px;
             .icon {
                 margin-right: 0.5rem;
@@ -404,7 +431,7 @@ body {
         }
         &-money {
             display: inline;
-            font-size: 30px;
+            @extend .font-30;
             font-weight: bold;
             color: #04646d;
         }
@@ -451,7 +478,7 @@ body {
     }
     .process {
         > span {
-            font-size: 14px;
+            @extend .font-14;
         }
     }
     .profile-name {
@@ -470,7 +497,7 @@ body {
     }
     .custom-width {
         min-width: 155px;
-        line-height: 26px;
+        @extend .line-26;
 
         .icon {
             width: 30px;
@@ -504,7 +531,7 @@ body {
     }
     .matching-score {
         &__title {
-            font-size: 20px;
+            @extend .font-20;
             line-height: 28px;
             margin-bottom: 1rem;
         }
@@ -567,12 +594,18 @@ body {
                         opacity: 1;
                     }
                 }
+                ~ .step-hire {
+                    display: block;
+                }
             }
             &-5 {
                 @for $i from 1 to 6 {
                     .step-#{$i} {
                         opacity: 1;
                     }
+                }
+                ~ .step-onboarding {
+                    display: block;
                 }
             }
         }
@@ -634,7 +667,7 @@ body {
         }
         &-title {
             border-bottom: 1px solid transparent;
-            font-size: 18px;
+            @extend .font-18;
             line-height: 30px;
             color: #0096a7;
             padding: 10px 40px 10px 0;
@@ -682,6 +715,14 @@ body {
         height: 30px;
         margin: 0px 6px;
         display: inline-flex;
+    }
+    .offer-date {
+        @extend .font-14;
+        color: rgb(3, 81, 89);
+        .icon {
+            width: 12.25px;
+            margin-right: 0.25rem;
+        }
     }
 }
 
@@ -734,7 +775,7 @@ body {
                 margin-bottom: 8px;
                 display: inline-flex;
                 background: rgba(242, 245, 245, 1);
-                font-size: 14px;
+                @extend .font-14;
                 max-width: 100%;
                 &.match {
                     background: rgba(223, 240, 255, 1);
@@ -758,7 +799,7 @@ body {
         position: relative;
         margin-bottom: 1rem;
         .view-more {
-            font-size: 12px;
+            @extend .font-12;
             .text-collapse {
                 display: none;
             }
@@ -776,7 +817,7 @@ body {
         background-color: rgba(221, 247, 251, 1);
         border-radius: 8px;
         color: rgba(27, 125, 140, 1);
-        font-size: 14px;
+        @extend .font-14;
         padding: 12px;
         display: flex;
         &.hidden {
@@ -794,7 +835,7 @@ body {
     margin-top: 40px;
     padding: 8px;
     border-radius: 8px;
-    font-size: 14px;
+    @extend .font-14;
     text-align: center;
     .very-low & {
         background: rgba(244, 67, 54, 0.22);
@@ -904,7 +945,7 @@ body {
         font-weight: bold;
         color: rgba(255, 255, 255, 1);
         white-space: nowrap;
-        font-size: 16px;
+        @extend .font-16;
         &.show {
             opacity: 1;
             left: 50%;
@@ -918,7 +959,7 @@ body {
         left: var(--l, "auto");
         opacity: 0;
         font-weight: 700;
-        font-size: 18px;
+        @extend .font-18;
         &.show {
             opacity: 1;
             .very-low & {
@@ -963,20 +1004,20 @@ body {
     }
 
     .number-1 {
-        font-size: 12px;
+        @extend .font-12;
         position: absolute;
         top: calc(100% + 10px);
         left: -4px;
     }
     .number-2 {
-        font-size: 12px;
+        @extend .font-12;
         position: absolute;
         right: -16px;
         top: calc(100% + 10px);
     }
     .highlight {
         font-weight: 700;
-        font-size: 18px;
+        @extend .font-18;
         .very-low & {
             color: rgba(244, 67, 54, 1);
         }
@@ -997,7 +1038,7 @@ body {
 .progress-bar-matching-score {
     display: flex;
     text-align: left;
-    font-size: 12px;
+    @extend .font-12;
     align-items: flex-end;
     margin-bottom: 0.5rem;
     .progress-bar-block {
@@ -1039,7 +1080,7 @@ body {
         padding: 0;
         width: 100%;
         table-layout: fixed;
-        font-size: 16px;
+        @extend .font-16;
         tr {
             background-color: #ffffff;
             border: 1px solid #f8f9fa;
@@ -1061,7 +1102,7 @@ body {
                 .link-edit {
                     color: #82a1a4;
                     font-weight: 400;
-                    font-size: 14px;
+                    @extend .font-14;
                     cursor: pointer;
                     &:hover {
                         text-decoration: underline;
@@ -1079,7 +1120,7 @@ body {
             &__label {
                 font-weight: bold;
                 color: rgb(10, 116, 126);
-                font-size: 18px;
+                @extend .font-18;
                 line-height: 28px;
             }
         }

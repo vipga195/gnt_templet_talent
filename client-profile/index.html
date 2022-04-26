@@ -84,8 +84,7 @@
                                                 </div>
                                                 <b>Technical Skill</b>
                                             </div>
-                                            <div class="block-matching-score__content pl-16 pr-16 align-self-center "
-                                                style="width:45%">
+                                            <div class="block-matching-score__content pl-16 pr-16 " style="width:45%">
                                                 <div class="progress-chart  input-value">
                                                     <span class="graph show" style="--per:149deg;"></span>
                                                     <span class="number-1 false">0%</span>
@@ -208,8 +207,7 @@
                                                 </div>
                                                 <b>Soft Skill</b>
                                             </div>
-                                            <div class="block-matching-score__content pl-16 pr-16 align-self-center "
-                                                style="width:45%">
+                                            <div class="block-matching-score__content pl-16 pr-16 " style="width:45%">
                                                 <div class="progress-chart  input-value">
                                                     <span class="graph show" style="--per:0deg;"></span>
                                                     <span class="number-1 highlight">0%</span>
@@ -374,9 +372,10 @@
                                     </div>
                                 </div>
                                 <div class="card-content">
+                                    <!-- đổi số theo step đang active sẽ tự hiện thông tin. vd step-1 step-2 ... -->
                                     <div class="tracking step-3">
                                         <div class="tracking-step step-1 ">
-                                            <div class="icon">
+                                            <div class="icon input-value">
                                                 <img src="https://gambaru.io/static/images/icon/recruitment.svg" alt="">
                                                 <!-- Fail -->
                                                 <!-- <img src="https://gambaru.io/static/images/icon/recruitment-fail.svg" 
@@ -391,7 +390,7 @@
                                         </div>
                                         <hr class="line">
                                         <div class="tracking-step step-2 ">
-                                            <div class="icon">
+                                            <div class="icon input-value">
                                                 <img src="https://gambaru.io/static/images/icon/continuous.svg" alt="">
                                                 <!-- Fail -->
                                                 <!-- <img src="https://gambaru.io/static/images/icon/continuous-fail.svg" 
@@ -406,7 +405,7 @@
                                         </div>
                                         <hr class="line">
                                         <div class="tracking-step step-3 ">
-                                            <div class="icon">
+                                            <div class="icon input-value">
                                                 <img src="https://gambaru.io/static/images/icon/candidate.svg" alt="">
                                                 <!-- Fail -->
                                                 <!-- <img src="https://gambaru.io/static/images/icon/candidate-fail.svg" 
@@ -421,7 +420,7 @@
                                         </div>
                                         <hr class="line">
                                         <div class="tracking-step step-4">
-                                            <div class="icon">
+                                            <div class="icon input-value">
                                                 <img src="https://gambaru.io/static/images/icon/wage.svg" alt="">
                                                 <!-- Fail -->
                                                 <!-- <img src="https://gambaru.io/static/images/icon/wage-fail.svg" alt=""> -->
@@ -435,7 +434,7 @@
                                         </div>
                                         <hr class="line">
                                         <div class="tracking-step step-5">
-                                            <div class="icon">
+                                            <div class="icon input-value">
                                                 <img src="https://gambaru.io/static/images/icon/team.svg" alt="">
                                                 <!-- Fail -->
                                                 <!-- <img src="https://gambaru.io/static/images/icon/team-fail.svg" alt=""> -->
@@ -801,7 +800,7 @@
                                     <div class="step-screen step-offer">
                                         <h4 class="font-300 mb-15" style="display: inline-flex;">
                                             <span class="mr-2">Salary: </span>
-                                            <b class="font-700 color-01707b"> USD 120</b>
+                                            <b class="font-700 color-01707b input-value"> USD 120</b>
                                             <div class="svg-container">
                                                 <svg version="1.1" id="tick" xmlns="http://www.w3.org/2000/svg"
                                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -919,6 +918,381 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="step-screen step-hire">
+                                        <div class="box success ">
+                                            <div class="box-item reason">
+                                                <div class="box-title">REASON</div>
+                                                <div class="box-content">
+                                                    <div class="content-title">Other Reason</div>
+                                                    <div class="row input-value">
+                                                        <div class="col-6">
+                                                            <div class="box-detail active">
+                                                                <div class="icon">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 512 512" fill="currentColor">
+                                                                        <path
+                                                                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" />
+                                                                    </svg>
+                                                                </div>
+                                                                <span>Experience in our domain</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="box-detail ">
+                                                                <div class="icon">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 512 512" fill="currentColor">
+                                                                        <path
+                                                                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" />
+                                                                    </svg>
+                                                                </div>
+                                                                <span>Good technical background</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="box-detail ">
+                                                                <div class="icon">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 512 512" fill="currentColor">
+                                                                        <path
+                                                                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" />
+                                                                    </svg>
+                                                                </div>
+                                                                <span>Work remote</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="box-content">
+                                                    <div class="content-title">Suitable CV</div>
+                                                    <div class="row input-value">
+                                                        <div class="col-6">
+                                                            <div class="box-detail active">
+                                                                <div class="icon">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 512 512" fill="currentColor">
+                                                                        <path
+                                                                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" />
+                                                                    </svg>
+                                                                </div>
+                                                                <span>Skills match with requirements</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="box-detail ">
+                                                                <div class="icon">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 512 512" fill="currentColor">
+                                                                        <path
+                                                                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" />
+                                                                    </svg>
+                                                                </div>
+                                                                <span>Work Experiences match with requirements </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-area input-value"> abc</div>
+                                                </div>
+                                            </div>
+                                            <div class="box-item advice">
+                                                <div class="box-title">ADVICE</div>
+                                                <div class="box-content">
+                                                    <div class="content-title">Screening Success</div>
+                                                    <div class="row input-value">
+                                                        <div class="col-6">
+                                                            <div class="box-detail active">
+                                                                <div class="icon">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 512 512" fill="currentColor">
+                                                                        <path
+                                                                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" />
+                                                                    </svg>
+                                                                </div>
+                                                                <span>Success</span>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="box-content">
+                                                    <div class="content-title">Test</div>
+
+                                                    <div class="text-area input-value">abc</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box fail d-none">
+                                            <div class="box-item reason">
+                                                <div class="box-title">REASON</div>
+                                                <div class="box-content">
+                                                    <div class="content-title">CV</div>
+                                                    <div class="row input-value">
+                                                        <div class="col-6">
+                                                            <div class="box-detail ">
+                                                                <div class="icon">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 512 512" fill="currentColor">
+                                                                        <path
+                                                                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" />
+                                                                    </svg>
+                                                                </div>
+                                                                <span>I have already this CV</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="box-detail ">
+                                                                <div class="icon">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 512 512" fill="currentColor">
+                                                                        <path
+                                                                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" />
+                                                                    </svg>
+                                                                </div>
+                                                                <span>Unprofessional CV</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="box-detail ">
+                                                                <div class="icon">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 512 512" fill="currentColor">
+                                                                        <path
+                                                                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" />
+                                                                    </svg>
+                                                                </div>
+                                                                <span>Not suitable CV</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-area input-value"> abc</div>
+                                                </div>
+                                            </div>
+                                            <div class="box-item advice">
+                                                <div class="box-title">ADVICE</div>
+                                                <div class="box-content">
+                                                    <div class="content-title">Fail - Screening</div>
+                                                    <div class="row input-value">
+                                                        <div class="col-6">
+                                                            <div class="box-detail active">
+                                                                <div class="icon">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 512 512" fill="currentColor">
+                                                                        <path
+                                                                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" />
+                                                                    </svg>
+                                                                </div>
+                                                                <span>Fail</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-area input-value">abc</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="step-screen step-onboarding">
+                                        <h4 class="font-300 mb-15 w-100" style="display: inline-flex;">
+                                            <span class="mr-2">Salary: </span>
+                                            <b class="font-700 color-01707b input-value"> USD 120</b>
+                                            <div class="float-right align-items-center" style="display: inline-flex;">
+                                                <div class="offer-date font-500">
+                                                    <span class="icon"> <svg xmlns="http://www.w3.org/2000/svg"
+                                                            fill="currentColor" viewBox="0 0 448 512">
+                                                            <path
+                                                                d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm64-192c0-8.8 7.2-16 16-16h288c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16v-64zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z" />
+                                                        </svg>
+                                                    </span>
+                                                    <span class="input-value"> Onboard date Status: 2022/04/22</span>
+                                                </div>
+                                                <div class="svg-container">
+                                                    <svg version="1.1" id="tick" xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                        viewBox="0 0 37 37" xml:space="preserve">
+                                                        <path class="circ path"
+                                                            d="
+                                                    M30.5,6.5L30.5,6.5c6.6,6.6,6.6,17.4,0,24l0,0c-6.6,6.6-17.4,6.6-24,0l0,0c-6.6-6.6-6.6-17.4,0-24l0,0C13.1-0.2,23.9-0.2,30.5,6.5z"
+                                                            style="fill: rgb(0, 230, 118); stroke: rgb(221, 249, 251); stroke-width: 2; stroke-linejoin: round; stroke-miterlimit: 10;">
+                                                        </path>
+                                                        <polyline class="tick path" points="
+                                                    11.6,20 15.9,24.2 26.4,13.8 "
+                                                            style="fill: none; stroke: rgb(255, 255, 255); stroke-width: 3; stroke-linejoin: round; stroke-miterlimit: 10;">
+                                                        </polyline>
+                                                    </svg>
+                                                </div>
+                                            </div>
+
+                                        </h4>
+                                        <div class="box success ">
+                                            <div class="box-item reason">
+                                                <div class="box-title">REASON</div>
+                                                <div class="box-content">
+                                                    <div class="content-title">Other Reason</div>
+                                                    <div class="row input-value">
+                                                        <div class="col-6">
+                                                            <div class="box-detail active">
+                                                                <div class="icon">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 512 512" fill="currentColor">
+                                                                        <path
+                                                                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" />
+                                                                    </svg>
+                                                                </div>
+                                                                <span>Experience in our domain</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="box-detail ">
+                                                                <div class="icon">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 512 512" fill="currentColor">
+                                                                        <path
+                                                                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" />
+                                                                    </svg>
+                                                                </div>
+                                                                <span>Good technical background</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="box-detail ">
+                                                                <div class="icon">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 512 512" fill="currentColor">
+                                                                        <path
+                                                                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" />
+                                                                    </svg>
+                                                                </div>
+                                                                <span>Work remote</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="box-content">
+                                                    <div class="content-title">Suitable CV</div>
+                                                    <div class="row input-value">
+                                                        <div class="col-6">
+                                                            <div class="box-detail active">
+                                                                <div class="icon">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 512 512" fill="currentColor">
+                                                                        <path
+                                                                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" />
+                                                                    </svg>
+                                                                </div>
+                                                                <span>Skills match with requirements</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="box-detail ">
+                                                                <div class="icon">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 512 512" fill="currentColor">
+                                                                        <path
+                                                                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" />
+                                                                    </svg>
+                                                                </div>
+                                                                <span>Work Experiences match with requirements </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-area input-value"> abc</div>
+                                                </div>
+                                            </div>
+                                            <div class="box-item advice">
+                                                <div class="box-title">ADVICE</div>
+                                                <div class="box-content">
+                                                    <div class="content-title">Screening Success</div>
+                                                    <div class="row input-value">
+                                                        <div class="col-6">
+                                                            <div class="box-detail active">
+                                                                <div class="icon">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 512 512" fill="currentColor">
+                                                                        <path
+                                                                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" />
+                                                                    </svg>
+                                                                </div>
+                                                                <span>Success</span>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="box-content">
+                                                    <div class="content-title">Test</div>
+
+                                                    <div class="text-area input-value">abc</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="box fail d-none">
+                                            <div class="box-item reason">
+                                                <div class="box-title">REASON</div>
+                                                <div class="box-content">
+                                                    <div class="content-title">CV</div>
+                                                    <div class="row input-value">
+                                                        <div class="col-6">
+                                                            <div class="box-detail ">
+                                                                <div class="icon">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 512 512" fill="currentColor">
+                                                                        <path
+                                                                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" />
+                                                                    </svg>
+                                                                </div>
+                                                                <span>I have already this CV</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="box-detail ">
+                                                                <div class="icon">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 512 512" fill="currentColor">
+                                                                        <path
+                                                                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" />
+                                                                    </svg>
+                                                                </div>
+                                                                <span>Unprofessional CV</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="box-detail ">
+                                                                <div class="icon">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 512 512" fill="currentColor">
+                                                                        <path
+                                                                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" />
+                                                                    </svg>
+                                                                </div>
+                                                                <span>Not suitable CV</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-area input-value"> abc</div>
+                                                </div>
+                                            </div>
+                                            <div class="box-item advice">
+                                                <div class="box-title">ADVICE</div>
+                                                <div class="box-content">
+                                                    <div class="content-title">Fail - Screening</div>
+                                                    <div class="row input-value">
+                                                        <div class="col-6">
+                                                            <div class="box-detail active">
+                                                                <div class="icon">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                                                        viewBox="0 0 512 512" fill="currentColor">
+                                                                        <path
+                                                                            d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" />
+                                                                    </svg>
+                                                                </div>
+                                                                <span>Fail</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-area input-value">abc</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="card card-info">
@@ -952,7 +1326,6 @@
                                                             <path
                                                                 d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z" />
                                                         </svg>
-
                                                     </div>
                                                     trunghuy12t@gmail.com
                                                 </div>
@@ -976,7 +1349,6 @@
                                                             <path
                                                                 d="M448 384c-28.02 0-31.26-32-74.5-32-43.43 0-46.825 32-74.75 32-27.695 0-31.454-32-74.75-32-42.842 0-47.218 32-74.5 32-28.148 0-31.202-32-74.75-32-43.547 0-46.653 32-74.75 32v-80c0-26.5 21.5-48 48-48h16V112h64v144h64V112h64v144h64V112h64v144h16c26.5 0 48 21.5 48 48v80zm0 128H0v-96c43.356 0 46.767-32 74.75-32 27.951 0 31.253 32 74.75 32 42.843 0 47.217-32 74.5-32 28.148 0 31.201 32 74.75 32 43.357 0 46.767-32 74.75-32 27.488 0 31.252 32 74.5 32v96zM96 96c-17.75 0-32-14.25-32-32 0-31 32-23 32-64 12 0 32 29.5 32 56s-14.25 40-32 40zm128 0c-17.75 0-32-14.25-32-32 0-31 32-23 32-64 12 0 32 29.5 32 56s-14.25 40-32 40zm128 0c-17.75 0-32-14.25-32-32 0-31 32-23 32-64 12 0 32 29.5 32 56s-14.25 40-32 40z" />
                                                         </svg>
-
                                                     </div>
                                                     17/01/1995
                                                 </div>
@@ -1079,7 +1451,8 @@
                                         </div>
                                         <div class="edu-content">
                                             <h5 class="font-600">VNUHCM-University Of Science </h5>
-                                            <p class="card-label--item font-16 mb-1 mt-1">Software Engineering </p>
+                                            <p class="card-label--item font-16 mb-1 mt-1 font-300">Software Engineering
+                                            </p>
                                             <span class="font-14 font-400">Sep / 2013 - Apr / 2015</span>
                                         </div>
 

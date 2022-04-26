@@ -1,3 +1,33 @@
+.font-36, body h2 {
+  font-size: 36px; }
+
+.font-30, body h3, .content .progress-circle, .content .salary-money {
+  font-size: 30px; }
+
+.font-24, body h4, .card-title {
+  font-size: 24px; }
+
+.font-20, .content .matching-score__title {
+  font-size: 20px; }
+
+.font-18, body h5, .content .box-title, .progress-chart .round-number, .progress-chart .highlight, .table-interview-time .schedule-interview__label {
+  font-size: 18px; }
+
+.font-16, body p, .container .text-area, .card-label, .progress-chart .round-text, .table-interview-time table {
+  font-size: 16px; }
+
+.font-14, .card-label--item, .content .choose-item, .content .salary-label, .content .process > span, .content .offer-date, .block-matching-score .tag-skill-matching-block .tag-skill-matching span.tag-skill-item, .block-matching-score .no-data-matching, .label-graph-matching-score, .table-interview-time table tr td .link-edit {
+  font-size: 14px; }
+
+.font-12, .block-matching-score .block-info-matching .view-more, .progress-chart .number-1, .progress-chart .number-2, .progress-bar-matching-score {
+  font-size: 12px; }
+
+.line-28 {
+  line-height: 28px; }
+
+.line-26, body p, .card-label, .content .custom-width {
+  line-height: 26px; }
+
 body {
   margin: 0 !important;
   font-size: 1rem;
@@ -14,32 +44,20 @@ body {
     vertical-align: middle; }
   body p {
     margin: 0px;
-    font-size: 16px;
-    line-height: 26px;
     font-weight: 300;
     color: #022629; }
   body h2 {
     margin: 0px;
-    font-size: 36px;
     line-height: 46px; }
   body h3 {
     margin: 0px;
-    font-size: 30px;
     line-height: 40px; }
   body h4 {
     margin: 0px;
-    font-size: 24px;
     line-height: 34px; }
   body h5 {
     margin: 0px;
-    font-size: 18px;
     line-height: 28px; }
-  body p {
-    margin: 0px;
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 300;
-    color: #022629; }
   body hr {
     box-sizing: content-box;
     height: 0;
@@ -160,6 +178,8 @@ body {
     display: none !important; }
   .container .w-100 {
     width: 100%; }
+  .container .h-100 {
+    height: 100%; }
   .container .pl-0 {
     padding-left: 0; }
   .container .pr-0 {
@@ -198,16 +218,10 @@ body {
     font-weight: 400; }
   .container .font-300 {
     font-weight: 300; }
-  .container .font-30 {
-    font-size: 30px; }
-  .container .font-18 {
-    font-size: 18px; }
-  .container .font-16 {
-    font-size: 16px; }
-  .container .font-14 {
-    font-size: 14px; }
   .container .align-self-center {
     align-self: center !important; }
+  .container .align-items-center {
+    align-items: center !important; }
   .container .color-fff {
     color: #ffffff; }
   .container .color-ffffffb8 {
@@ -220,6 +234,9 @@ body {
     color: #343a40; }
   .container .color-01707b {
     color: #01707b; }
+  .container .float-right {
+    float: right;
+    margin-left: auto; }
   .container .icon {
     display: inline-flex;
     line-height: 18px;
@@ -237,7 +254,6 @@ body {
     margin-top: 12px;
     border-radius: 4px;
     padding: 12px;
-    font-size: 16px;
     border: 2px solid #e2f5f8;
     background: #e2f5f8; }
 
@@ -260,17 +276,13 @@ body {
   .card-title {
     display: inline-block;
     font-weight: bold;
-    font-size: 24px;
     margin-bottom: 14px;
     color: #0096a7; }
   .card-label {
     color: rgba(0, 0, 0, 0.5) !important;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 26px; }
+    font-weight: 300; }
     .card-label--item {
       font-weight: bold;
-      font-size: 14px;
       margin-bottom: 10px; }
   .card-block {
     color: #6c757d; }
@@ -307,7 +319,6 @@ body {
     margin: 1.5rem auto;
     width: 150px;
     height: 150px;
-    font-size: 30px;
     color: #161616;
     border-radius: 50%;
     overflow: hidden;
@@ -353,7 +364,6 @@ body {
       display: inline-block;
       background: #f8f9fa;
       padding: 6px 14px;
-      font-size: 14px;
       border-radius: 2px;
       color: #6c757d;
       margin-right: 8px;
@@ -377,7 +387,6 @@ body {
     .content .salary-label {
       display: flex;
       font-weight: bold;
-      font-size: 14px;
       margin-bottom: 0px; }
       .content .salary-label .icon {
         margin-right: 0.5rem;
@@ -386,7 +395,6 @@ body {
           width: 100%; }
     .content .salary-money {
       display: inline;
-      font-size: 30px;
       font-weight: bold;
       color: #04646d; }
   .content .remote {
@@ -421,8 +429,6 @@ body {
       margin-top: 0; }
   .content .list-unstyled {
     display: flex; }
-  .content .process > span {
-    font-size: 14px; }
   .content .profile-name h5 {
     display: inline-block; }
   .content .profile-name .icon {
@@ -432,8 +438,7 @@ body {
   .content .profile-name:not(:first-child) {
     margin-top: 1rem; }
   .content .custom-width {
-    min-width: 155px;
-    line-height: 26px; }
+    min-width: 155px; }
     .content .custom-width .icon {
       width: 30px;
       height: 30px;
@@ -458,7 +463,6 @@ body {
     font-weight: 700 !important;
     color: #6c757d; }
   .content .matching-score__title {
-    font-size: 20px;
     line-height: 28px;
     margin-bottom: 1rem; }
   .content .edu {
@@ -502,6 +506,8 @@ body {
       opacity: 1; }
     .content .tracking.step-4 .step-4 {
       opacity: 1; }
+    .content .tracking.step-4 ~ .step-hire {
+      display: block; }
     .content .tracking.step-5 .step-1 {
       opacity: 1; }
     .content .tracking.step-5 .step-2 {
@@ -512,6 +518,8 @@ body {
       opacity: 1; }
     .content .tracking.step-5 .step-5 {
       opacity: 1; }
+    .content .tracking.step-5 ~ .step-onboarding {
+      display: block; }
     .content .tracking-step {
       width: 100%;
       display: flex;
@@ -553,7 +561,6 @@ body {
     border-bottom: 1px solid #e2f5f8; }
   .content .box-title {
     border-bottom: 1px solid transparent;
-    font-size: 18px;
     line-height: 30px;
     color: #0096a7;
     padding: 10px 40px 10px 0;
@@ -593,6 +600,11 @@ body {
     height: 30px;
     margin: 0px 6px;
     display: inline-flex; }
+  .content .offer-date {
+    color: #035159; }
+    .content .offer-date .icon {
+      width: 12.25px;
+      margin-right: 0.25rem; }
 
 .block-matching-score {
   display: flex;
@@ -649,7 +661,6 @@ body {
     margin-bottom: 8px;
     display: inline-flex;
     background: #f2f5f5;
-    font-size: 14px;
     max-width: 100%; }
     .block-matching-score .tag-skill-matching-block .tag-skill-matching span.tag-skill-item.match {
       background: #dff0ff;
@@ -666,19 +677,16 @@ body {
     font-weight: 500;
     position: relative;
     margin-bottom: 1rem; }
-    .block-matching-score .block-info-matching .view-more {
-      font-size: 12px; }
-      .block-matching-score .block-info-matching .view-more .text-collapse {
-        display: none; }
-      .block-matching-score .block-info-matching .view-more.active .text-collapse {
-        display: inline; }
-      .block-matching-score .block-info-matching .view-more.active .text-expand {
-        display: none; }
+    .block-matching-score .block-info-matching .view-more .text-collapse {
+      display: none; }
+    .block-matching-score .block-info-matching .view-more.active .text-collapse {
+      display: inline; }
+    .block-matching-score .block-info-matching .view-more.active .text-expand {
+      display: none; }
   .block-matching-score .no-data-matching {
     background-color: #ddf7fb;
     border-radius: 8px;
     color: #1b7d8c;
-    font-size: 14px;
     padding: 12px;
     display: flex; }
     .block-matching-score .no-data-matching.hidden {
@@ -692,7 +700,6 @@ body {
   margin-top: 40px;
   padding: 8px;
   border-radius: 8px;
-  font-size: 14px;
   text-align: center; }
   .very-low .label-graph-matching-score {
     background: rgba(244, 67, 54, 0.22); }
@@ -772,8 +779,7 @@ body {
     border-radius: 17.5px;
     font-weight: bold;
     color: white;
-    white-space: nowrap;
-    font-size: 16px; }
+    white-space: nowrap; }
     .progress-chart .round-text.show {
       opacity: 1;
       left: 50%; }
@@ -784,8 +790,7 @@ body {
     right: var(--r, "auto");
     left: var(--l, "auto");
     opacity: 0;
-    font-weight: 700;
-    font-size: 18px; }
+    font-weight: 700; }
     .progress-chart .round-number.show {
       opacity: 1; }
       .very-low .progress-chart .round-number.show {
@@ -819,18 +824,15 @@ body {
     .progress-chart .round.show {
       transform: translateX(-50%) rotate(var(--per, "45deg")); }
   .progress-chart .number-1 {
-    font-size: 12px;
     position: absolute;
     top: calc(100% + 10px);
     left: -4px; }
   .progress-chart .number-2 {
-    font-size: 12px;
     position: absolute;
     right: -16px;
     top: calc(100% + 10px); }
   .progress-chart .highlight {
-    font-weight: 700;
-    font-size: 18px; }
+    font-weight: 700; }
     .very-low .progress-chart .highlight {
       color: #f44336; }
     .low .progress-chart .highlight {
@@ -845,7 +847,6 @@ body {
 .progress-bar-matching-score {
   display: flex;
   text-align: left;
-  font-size: 12px;
   align-items: flex-end;
   margin-bottom: 0.5rem; }
   .progress-bar-matching-score .progress-bar-block {
@@ -877,8 +878,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  table-layout: fixed;
-  font-size: 16px; }
+  table-layout: fixed; }
   .table-interview-time table tr {
     background-color: #ffffff;
     border: 1px solid #f8f9fa;
@@ -899,7 +899,6 @@ body {
       .table-interview-time table tr td .link-edit {
         color: #82a1a4;
         font-weight: 400;
-        font-size: 14px;
         cursor: pointer; }
         .table-interview-time table tr td .link-edit:hover {
           text-decoration: underline; }
@@ -912,7 +911,6 @@ body {
     .table-interview-time .schedule-interview__label {
       font-weight: bold;
       color: #0a747e;
-      font-size: 18px;
       line-height: 28px; }
 
 /*# sourceMappingURL=index.css.map */
