@@ -1,5 +1,3 @@
-@import "./mixin/index.scss";
-
 $width: 700px;
 //font
 .font-36 {
@@ -35,6 +33,28 @@ $width: 700px;
 }
 .line-26 {
     line-height: 13px;
+}
+
+.clear {
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+.float-right {
+    float: right;
+}
+.float-left {
+    float: left;
+}
+.middle {
+    display: inline-block !important;
+    vertical-align: middle !important;
+}
+.top {
+    display: inline-block !important;
+    vertical-align: top !important;
 }
 body {
     * {
@@ -89,7 +109,7 @@ body {
         margin-top: 1rem;
         margin-bottom: 1rem;
         border: 0;
-        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        @extend .middle;
     }
     table {
         width: 100%;
@@ -107,8 +127,6 @@ body {
 }
 .layout-templet {
     background: #e5f2f4;
-    // background: rgba(0, 131, 143, 0.1);
-    // background-size: 22px 22px;
 }
 
 .container {
@@ -236,13 +254,11 @@ body {
     }
     .icon {
         display: inline-block;
-        line-height: 9px;
-        left: 0px;
-        bottom: 0px;
         opacity: 1;
+        vertical-align: middle;
     }
     .d-flex {
-        display: flex;
+        display: block;
     }
     .text-area {
         color: #495057;
@@ -287,7 +303,7 @@ body {
         color: #0096a7;
     }
     &-label {
-        color: rgba(0, 0, 0, 0.5) !important;
+        color: #022528 !important;
         font-weight: 300;
         @extend .font-16;
         @extend .line-26;
@@ -566,8 +582,10 @@ body {
     }
     .major {
         &-item {
-            display: flex;
-            align-items: flex-start;
+            display: block;
+        }
+        &-skill {
+            max-width: calc(100% - 22px);
         }
         .icon {
             width: 15px;
@@ -578,10 +596,11 @@ body {
         }
     }
     .tracking {
-        display: flex;
+        display: block;
         border-radius: 2px;
         align-items: center;
         padding: 0.75rem 0;
+        overflow: auto;
         &.step {
             &-1 {
                 @for $i from 1 to 2 {
@@ -635,10 +654,9 @@ body {
             }
         }
         &-step {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            display: block;
+            float: left;
+            text-align: center;
             opacity: 0.5;
             &.active {
                 opacity: 1;
@@ -664,7 +682,8 @@ body {
             }
         }
         .line {
-            width: 100%;
+            float: left;
+            width: 44px;
             z-index: 1;
             border-top: 0.5px dashed;
         }
@@ -689,16 +708,24 @@ body {
     }
     .step-screen {
         display: none;
+        .active {
+            display: block;
+        }
     }
     .status {
         &-item {
-            display: flex;
+            display: block;
             width: 35%;
             height: 25px;
         }
         &-label {
+            display: inline-block;
             font-weight: 700;
-            width: 50%;
+            width: 49%;
+        }
+        &-text {
+            display: inline-block;
+            width: 49%;
         }
         &-payment {
             display: inline-block;
@@ -758,7 +785,7 @@ body {
             }
         }
         &-detail {
-            display: flex;
+            display: block;
             align-items: center;
             margin-bottom: 6px;
             padding: 6px;
@@ -801,7 +828,7 @@ body {
         width: 15px;
         height: 15px;
         margin: 0px 3px;
-        display: inline-flex;
+        display: inline-block;
         .check-circle {
             width: 15px;
         }
@@ -820,11 +847,10 @@ body {
 }
 
 .block-matching-score {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
     padding: 7px 5px;
     &__title {
-        display: flex;
+        display: block;
         align-items: center;
         margin-bottom: 0.75rem;
         width: 100%;
@@ -833,19 +859,19 @@ body {
     &.active {
         box-shadow: 0px 6px 16px rgba(120, 139, 141, 0.14);
         .very-low & {
-            background: linear-gradient(358.54deg, rgba(244, 67, 54, 0.1) 6.49%, rgba(241, 253, 255, 0.01) 98.27%);
+            background: #feedec;
         }
         .low & {
-            background: linear-gradient(358.54deg, rgba(255, 109, 0, 0.1) 6.49%, rgba(241, 253, 255, 0.01) 98.27%);
+            background: #fff2e8;
         }
         .fair & {
-            background: linear-gradient(358.54deg, rgba(255, 193, 7, 0.1) 6.49%, rgba(241, 253, 255, 0.01) 98.27%);
+            background: #fff9e7;
         }
         .good & {
-            background: linear-gradient(358.54deg, rgba(5, 139, 252, 0.1) 6.49%, rgba(241, 253, 255, 0.01) 98.27%);
+            background: #e5f3fe;
         }
         .excellent & {
-            background: linear-gradient(358.54deg, rgba(150, 231, 198, 0.1) 6.49%, rgba(241, 253, 255, 0.01) 98.27%);
+            background: #f5fdfa;
         }
     }
 
@@ -853,7 +879,6 @@ body {
         &.scroll {
             max-height: 45px;
             overflow: hidden;
-            @include scrollBar(rgba(27, 186, 221, 1));
         }
         &.view-more {
             margin-right: -5px;
@@ -861,24 +886,25 @@ body {
             overflow-y: overlay;
         }
         .tag-skill-matching {
-            span.tag-skill-item {
+            .tag-skill-item {
                 padding: 4px 8px;
                 border-radius: 2px;
                 margin-right: 4px;
                 margin-bottom: 4px;
-                display: inline-flex;
-                background: rgba(242, 245, 245, 1);
+                display: inline-block;
+                background: #f2f5f5;
                 @extend .font-14;
                 max-width: 100%;
                 &.match {
-                    background: rgba(223, 240, 255, 1);
-                    color: rgba(3, 63, 114, 1);
+                    background: #dff0ff;
+                    color: #033f72;
                 }
                 b {
                     white-space: nowrap;
                     padding-left: 2px;
                 }
                 > span {
+                    @extend .font-400;
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
@@ -907,20 +933,31 @@ body {
         }
     }
     .no-data-matching {
-        background-color: rgba(221, 247, 251, 1);
+        background-color: #ddf7fb;
         border-radius: 4px;
-        color: rgba(27, 125, 140, 1);
+        color: #1b7d8c;
         @extend .font-14;
         padding: 6px;
-        display: flex;
+        display: block;
         &.hidden {
             display: none;
         }
         .icon {
-            min-width: 14px;
+            min-width: 12px;
+            @extend .top;
             .info {
                 width: 9.5px;
             }
+        }
+        .no-data {
+            display: inline-block;
+            max-width: calc(100% - 19px);
+        }
+    }
+    .icon {
+        width: 17px;
+        .technical {
+            width: 15px;
         }
     }
 }
@@ -931,19 +968,19 @@ body {
     @extend .font-14;
     text-align: center;
     .very-low & {
-        background: rgba(244, 67, 54, 0.22);
+        background: #fdd6d3;
     }
     .low & {
-        background: rgba(255, 109, 0, 0.22);
+        background: #ffdfc7;
     }
     .fair & {
-        background: rgba(255, 193, 7, 0.22);
+        background: #fff1c9;
     }
     .good & {
-        background: rgba(5, 139, 252, 0.08);
+        background: #d3ebfe;
     }
     .excellent & {
-        background: rgba(150, 231, 198, 0.22);
+        background: #e8faf2;
     }
 }
 .progress-chart {
@@ -956,53 +993,53 @@ body {
         width: 81px;
         height: 40.5px;
         position: absolute;
-        border: 6px solid rgba(0, 0, 0, 0.1);
+        border: 6px solid #e5e5e5;
         border-radius: 90px 90px 0 0;
         border-bottom: none;
     }
     .very-low & {
         .graph:after,
         .round:before {
-            border-color: rgba(244, 67, 54, 1);
+            border-color: #f44336;
         }
         .round-text {
-            background-color: rgba(244, 67, 54, 1);
+            background-color: #f44336;
         }
     }
     .low & {
         .graph:after,
         .round:before {
-            border-color: rgba(255, 109, 0, 1);
+            border-color: #ff6d00;
         }
         .round-text {
-            background-color: rgba(255, 109, 0, 1);
+            background-color: #ff6d00;
         }
     }
     .fair & {
         .graph:after,
         .round:before {
-            border-color: rgba(255, 193, 7, 1);
+            border-color: #ffc107;
         }
         .round-text {
-            background-color: rgba(255, 193, 7, 1);
+            background-color: #ffc107;
         }
     }
     .good & {
         .graph:after,
         .round:before {
-            border-color: rgba(5, 139, 252, 1);
+            border-color: #058bfc;
         }
         .round-text {
-            background-color: rgba(5, 139, 252, 1);
+            background-color: #058bfc;
         }
     }
     .excellent & {
         .graph:after,
         .round:before {
-            border-color: rgba(53, 216, 149, 1);
+            border-color: #35d895;
         }
         .round-text {
-            background-color: rgba(53, 216, 149, 1);
+            background-color: #35d895;
         }
     }
     .graph {
@@ -1015,7 +1052,7 @@ body {
             height: 40.5px;
             position: absolute;
             top: 100%;
-            border: 6px solid rgba(0, 0, 0, 0.1);
+            border: 6px solid #0000001a;
             content: "";
             border-radius: 0 0 90px 90px;
             border-top: none;
@@ -1032,11 +1069,11 @@ body {
         left: 0%;
         transform: translate(-50%, -50%);
         opacity: 0;
-        background-color: rgba(0, 0, 0, 0.1);
+        background-color: #0000001a;
         padding: 2px 8px;
         border-radius: 9px;
         font-weight: bold;
-        color: rgba(255, 255, 255, 1);
+        color: #fff;
         white-space: nowrap;
         @extend .font-16;
         &.show {
@@ -1056,19 +1093,19 @@ body {
         &.show {
             opacity: 1;
             .very-low & {
-                color: rgba(244, 67, 54, 1);
+                color: #f44336;
             }
             .low & {
-                color: rgba(255, 109, 0, 1);
+                color: #ff6d00;
             }
             .fair & {
-                color: rgba(255, 193, 7, 1);
+                color: #ffc107;
             }
             .good & {
-                color: rgba(5, 139, 252, 1);
+                color: #058bfc;
             }
             .excellent & {
-                color: rgba(53, 216, 149, 1);
+                color: #35d895;
             }
         }
     }
@@ -1088,7 +1125,7 @@ body {
             left: 0%;
             border-radius: 50%;
             background: #fff;
-            border: 6px solid rgba(0, 0, 0, 0.1);
+            border: 6px solid #0000001a;
             transform: translate(-50%, -50%);
         }
         &.show {
@@ -1112,54 +1149,55 @@ body {
         font-weight: 700;
         @extend .font-18;
         .very-low & {
-            color: rgba(244, 67, 54, 1);
+            color: #f44336;
         }
         .low & {
-            color: rgba(255, 109, 0, 1);
+            color: #ff6d00;
         }
         .fair & {
-            color: rgba(255, 193, 7, 1);
+            color: #ffc107;
         }
         .good & {
-            color: rgba(5, 139, 252, 1);
+            color: #058bfc;
         }
         .excellent & {
-            color: rgba(53, 216, 149, 1);
+            color: #35d895;
         }
     }
 }
 .progress-bar-matching-score {
-    display: flex;
+    display: block;
     text-align: left;
     @extend .font-12;
-    align-items: flex-end;
     margin-bottom: 0.5rem;
     .progress-bar-block {
         height: 6px;
-        width: calc(100% - 28px);
-        background-color: rgba(232, 240, 241, 1);
-        border-radius: 2px;
+        width: calc(100% - 30px);
+        background-color: #e8f0f1;
+        border-radius: 4px;
+        display: inline-block;
         .progress-bar-percent {
-            height: 3px;
+            height: 6px;
             border-radius: 1.5px;
             &.very-low {
-                background-color: rgba(244, 67, 54, 0.3);
+                background-color: #ecbcb8;
             }
             &.low {
-                background-color: rgba(255, 109, 0, 0.3);
+                background-color: #efc9a8;
             }
             &.fair {
-                background-color: rgba(255, 193, 7, 0.3);
+                background-color: #efe2aa;
             }
             &.good {
-                background-color: rgba(5, 139, 252, 0.3);
+                background-color: #a4d2f4;
             }
             &.excellent {
-                background-color: rgba(150, 231, 198, 0.3);
+                background-color: #cfeee4;
             }
         }
     }
     .progress-bar-text {
+        display: inline-block;
         width: 28px;
         line-height: 1;
         padding-left: 8px;

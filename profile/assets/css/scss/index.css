@@ -13,14 +13,34 @@
 .font-14, .card-label--item, .card .choose-item, .card .salary-label, .card .process > span {
   font-size: 7px; }
 
+.clear::after {
+  display: block;
+  content: "";
+  clear: both; }
+
+.float-right {
+  float: right; }
+
+.float-left {
+  float: left; }
+
+.middle {
+  display: inline-block !important;
+  vertical-align: middle !important; }
+
+.top {
+  display: inline-block !important;
+  vertical-align: top !important; }
+
 body {
   margin: 0 !important;
-  font-size: 0.5rem;
+  font-size: 8px;
   line-height: 1.5;
   font-family: "Roboto", sans-serif;
   color: #343a40; }
   body * {
-    outline: 0 !important; }
+    outline: 0 !important;
+    text-align: left; }
   body img {
     width: 100%;
     max-width: 100%; }
@@ -33,17 +53,25 @@ body {
     font-weight: 300;
     color: #022629; }
   body h2 {
+    margin-block-start: 0;
+    margin-block-end: 0;
     margin: 0px;
     font-size: 18px;
     line-height: 23px; }
   body h3 {
+    margin-block-start: 0;
+    margin-block-end: 0;
     margin: 0px;
     line-height: 20px; }
   body h4 {
+    margin-block-start: 0;
+    margin-block-end: 0;
     margin: 0px;
     font-size: 12px;
     line-height: 17px; }
   body h5 {
+    margin-block-start: 0;
+    margin-block-end: 0;
     margin: 0px;
     line-height: 14px; }
   body p {
@@ -103,11 +131,9 @@ body {
   .container .color-ffffffc9 {
     color: #bccac2; }
   .container .icon {
-    display: inline-flex;
-    line-height: 9px;
-    left: 0px;
-    bottom: 0px;
-    opacity: 1; }
+    display: inline-block;
+    opacity: 1;
+    vertical-align: middle; }
   .container .w-100 {
     width: 100%; }
 
@@ -149,11 +175,11 @@ body {
     .content .location .icon {
       display: inline-block;
       max-width: 5px;
-      margin-right: 0.25rem; }
+      margin-right: 4px; }
       .content .location .icon .marker {
         width: 5.25px; }
   .content .progress-circle {
-    margin: 0.75rem auto;
+    margin: 12px auto;
     width: 80px;
     height: 80px;
     color: #161616;
@@ -181,27 +207,30 @@ body {
     text-transform: uppercase;
     z-index: 1; }
   .content .infomation {
-    padding-top: 0.75rem; }
+    padding-top: 12px; }
   .content .profile-name h5 {
     display: inline-block; }
   .content .profile-name .icon {
-    width: 13.5px;
-    margin-right: 0.25rem;
-    margin-bottom: 1px; }
+    width: 15px;
+    margin-right: 2px;
+    margin-top: 2px; }
+    .content .profile-name .icon .level {
+      width: 13.5px; }
   .content .profile-name:not(:first-child) {
-    margin-top: 0.5rem; }
-  .content .major-item {
-    display: flex;
-    align-items: flex-start; }
+    margin-top: 8px; }
+  .content .major-skill {
+    max-width: calc(100% - 22px); }
   .content .major .icon {
     width: 15px;
     margin-right: 7px; }
+    .content .major .icon img {
+      width: 15px; }
 
 .card {
   background: #fff;
   padding: 12px;
   border-radius: 2px;
-  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08) !important;
   margin-bottom: 12px; }
   .card-title {
     display: inline-block;
@@ -242,11 +271,8 @@ body {
       display: inline-block;
       background: #f8f9fa;
       padding: 3px 7px;
-      border-radius: 1px;
       color: #6c757d;
-      margin-right: 4px;
-      margin-left: 0;
-      margin-bottom: 6px;
+      margin: 0 4px 6px 0;
       border-radius: 1px; }
   .card .salary {
     background: #e2fafe;
@@ -254,13 +280,15 @@ body {
     margin: 0px 8px;
     margin-top: 5px;
     border-radius: 2px; }
+    .card .salary-item:not(:last-child) {
+      margin-bottom: 8px; }
     .card .salary-label {
       display: block;
       font-weight: bold;
       margin-bottom: 0px; }
       .card .salary-label .icon {
-        margin-right: 0.25rem;
-        max-width: 8.25px; }
+        margin-right: 2px;
+        max-width: 10px; }
         .card .salary-label .icon .money {
           width: 8.25px; }
     .card .salary-money {
@@ -273,7 +301,7 @@ body {
     .card .remote .card-label--item {
       display: inline-block; }
     .card .remote .input-value {
-      float: right;
+      padding-left: 8px;
       padding-right: 8px; }
   .card .bar-language-profile {
     margin-top: 8px;
@@ -324,8 +352,8 @@ body {
       .card .custom-width .icon .birthday {
         width: 7px; }
   .card .job {
-    margin-top: 0.25rem;
-    margin-bottom: 0.125rem;
+    margin-top: 4px;
+    margin-bottom: 2px;
     font-weight: 700 !important;
     color: #6c757d; }
   .card .edu {
