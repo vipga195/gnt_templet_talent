@@ -13,7 +13,7 @@
 .font-18, body h5, .content .box-title, .progress-chart .round-number, .progress-chart .highlight, .table-interview-time .schedule-interview__label {
   font-size: 9px; }
 
-.font-16, body, body p, .container .text-area, .card-label, .progress-chart .round-text, .table-interview-time table {
+.font-16, body, body p, .container .text-area, .card-label, .card-block, .content .tracking .text-step-hired .text-step-number, .content .tracking .text-step-hired .count-tracking-step, .content .box-detail > span, .progress-chart .round-text, .table-interview-time table {
   font-size: 8px; }
 
 .font-14, .card-label--item, .content .choose-item, .content .salary-label, .content .process > span, .content .offer-date, .block-matching-score .tag-skill-matching-block .tag-skill-matching span.tag-skill-item, .block-matching-score .no-data-matching, .label-graph-matching-score, .table-interview-time table tr td .link-edit {
@@ -67,6 +67,10 @@ body {
     margin-bottom: 1rem;
     border: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1); }
+  body table {
+    width: 100%; }
+  body td {
+    vertical-align: top; }
 
 *,
 *::before,
@@ -344,7 +348,6 @@ body {
     padding-top: 0.75rem; }
   .content .choose {
     background: #f8f9fa;
-    margin: 0px 8px;
     border-radius: 2px;
     display: block;
     align-items: center; }
@@ -380,7 +383,6 @@ body {
   .content .salary {
     background: #e2fafe;
     padding: 7px;
-    margin: 0px 8px;
     margin-top: 5px;
     border-radius: 2px; }
     .content .salary-item:not(:last-child) {

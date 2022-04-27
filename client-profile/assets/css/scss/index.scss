@@ -91,6 +91,12 @@ body {
         border: 0;
         border-top: 1px solid rgba(0, 0, 0, 0.1);
     }
+    table {
+        width: 100%;
+    }
+    td {
+        vertical-align: top;
+    }
 }
 *,
 *::before,
@@ -293,6 +299,7 @@ body {
     }
     &-block {
         color: #6c757d;
+        @extend .font-16;
     }
 }
 
@@ -368,7 +375,7 @@ body {
     }
     .choose {
         background: #f8f9fa;
-        margin: 0px 8px;
+        // margin: 0px 8px;
         border-radius: 2px;
         display: block;
         align-items: center;
@@ -412,7 +419,7 @@ body {
     .salary {
         background: #e2fafe;
         padding: 7px;
-        margin: 0px 8px;
+        // margin: 0px 8px;
         margin-top: 5px;
         border-radius: 2px;
         &-item {
@@ -672,9 +679,11 @@ body {
                 color: #022528;
                 font-weight: 300;
                 white-space: nowrap;
+                @extend .font-16;
             }
             .count-tracking-step {
                 font-weight: 700;
+                @extend .font-16;
             }
         }
     }
@@ -742,6 +751,9 @@ body {
                     width: 8px;
                     display: block !important;
                 }
+            }
+            > span {
+                @extend .font-16;
             }
         }
         .icon {
