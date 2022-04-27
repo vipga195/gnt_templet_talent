@@ -16,10 +16,10 @@
 .font-16, body, body p, .container .text-area, .card-label, .card-block, .content .tracking .text-step-hired .text-step-number, .content .tracking .text-step-hired .count-tracking-step, .content .box-detail > span, .progress-chart .round-text, .table-interview-time table {
   font-size: 8px; }
 
-.font-14, .card-label--item, .content .choose-item, .content .salary-label, .content .process > span, .content .offer-date, .block-matching-score .tag-skill-matching-block .tag-skill-matching span.tag-skill-item, .block-matching-score .no-data-matching, .label-graph-matching-score, .table-interview-time table tr td .link-edit {
+.font-14, .card-label--item, .content .choose-item, .content .salary-label, .content .process > span, .content .status-payment, .content .offer-date, .block-matching-score .tag-skill-matching-block .tag-skill-matching span.tag-skill-item, .block-matching-score .no-data-matching, .label-graph-matching-score, .table-interview-time table tr td .link-edit {
   font-size: 7px; }
 
-.font-12, .block-matching-score .block-info-matching .view-more, .progress-chart .number-1, .progress-chart .number-2, .progress-bar-matching-score {
+.font-12, .content .status-payment-waiting, .block-matching-score .block-info-matching .view-more, .progress-chart .number-1, .progress-chart .number-2, .progress-bar-matching-score {
   font-size: 6px; }
 
 .line-30, .content .custom-width .icon, .content .box-title {
@@ -211,9 +211,9 @@ body {
   .container .mb-0 {
     margin-bottom: 0 !important; }
   .container .mb-2 {
-    margin-bottom: 0.5rem; }
-  .container .mb-1 {
     margin-bottom: 0.25rem; }
+  .container .mb-1 {
+    margin-bottom: 0.125rem; }
   .container .font-700 {
     font-weight: 700; }
   .container .font-600 {
@@ -578,6 +578,25 @@ body {
   .content .status-label {
     font-weight: 700;
     width: 50%; }
+  .content .status-payment {
+    display: inline-block;
+    align-items: center;
+    padding: 1px 5px;
+    background: #03515959;
+    color: #fff;
+    line-height: 10px;
+    margin-left: 4px;
+    border-radius: 1px; }
+    .content .status-payment .icon {
+      width: 10px;
+      height: 9px;
+      margin-right: 0.125rem;
+      vertical-align: middle; }
+      .content .status-payment .icon .credit {
+        width: 10px; }
+    .content .status-payment-waiting {
+      line-height: 10px;
+      color: red; }
   .content .box-item:not(:last-child) {
     border-bottom: 1px solid #e2f5f8; }
   .content .box-title {

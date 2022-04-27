@@ -68,98 +68,6 @@ body {
   width: 700px;
   margin: 0 auto;
   padding: 0 8px; }
-  .container .row {
-    display: block;
-    margin-right: -8px;
-    margin-left: -8px; }
-    .container .row::after {
-      display: block;
-      content: "";
-      clear: both; }
-  .container .col-1 {
-    float: left;
-    max-width: 8.3333333333%;
-    position: relative;
-    width: 100%;
-    padding-right: 8px;
-    padding-left: 8px; }
-  .container .col-2 {
-    float: left;
-    max-width: 16.6666666667%;
-    position: relative;
-    width: 100%;
-    padding-right: 8px;
-    padding-left: 8px; }
-  .container .col-3 {
-    float: left;
-    max-width: 25%;
-    position: relative;
-    width: 100%;
-    padding-right: 8px;
-    padding-left: 8px; }
-  .container .col-4 {
-    float: left;
-    max-width: 33.3333333333%;
-    position: relative;
-    width: 100%;
-    padding-right: 8px;
-    padding-left: 8px; }
-  .container .col-5 {
-    float: left;
-    max-width: 41.6666666667%;
-    position: relative;
-    width: 100%;
-    padding-right: 8px;
-    padding-left: 8px; }
-  .container .col-6 {
-    float: left;
-    max-width: 50%;
-    position: relative;
-    width: 100%;
-    padding-right: 8px;
-    padding-left: 8px; }
-  .container .col-7 {
-    float: left;
-    max-width: 58.3333333333%;
-    position: relative;
-    width: 100%;
-    padding-right: 8px;
-    padding-left: 8px; }
-  .container .col-8 {
-    float: left;
-    max-width: 66.6666666667%;
-    position: relative;
-    width: 100%;
-    padding-right: 8px;
-    padding-left: 8px; }
-  .container .col-9 {
-    float: left;
-    max-width: 75%;
-    position: relative;
-    width: 100%;
-    padding-right: 8px;
-    padding-left: 8px; }
-  .container .col-10 {
-    float: left;
-    max-width: 83.3333333333%;
-    position: relative;
-    width: 100%;
-    padding-right: 8px;
-    padding-left: 8px; }
-  .container .col-11 {
-    float: left;
-    max-width: 91.6666666667%;
-    position: relative;
-    width: 100%;
-    padding-right: 8px;
-    padding-left: 8px; }
-  .container .col-12 {
-    float: left;
-    max-width: 100%;
-    position: relative;
-    width: 100%;
-    padding-right: 8px;
-    padding-left: 8px; }
   .container .pl-0 {
     padding-left: 0; }
   .container .pr-0 {
@@ -420,6 +328,17 @@ body {
     margin-bottom: 0.125rem;
     font-weight: 700 !important;
     color: #6c757d; }
+  .card .edu {
+    display: inline-block;
+    vertical-align: middle; }
+    .card .edu .icon {
+      float: left;
+      min-width: 40px; }
+      .card .edu .icon .building {
+        width: 40px; }
+    .card .edu-content {
+      float: left;
+      vertical-align: middle; }
   .card .list-unstyled {
     display: inline-block; }
 

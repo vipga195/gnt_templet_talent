@@ -87,27 +87,6 @@ body {
     margin: 0 auto;
     padding: 0 8px;
 
-    .row {
-        display: block;
-        // flex-wrap: wrap;
-        margin-right: -8px;
-        margin-left: -8px;
-        &::after {
-            display: block;
-            content: "";
-            clear: both;
-        }
-    }
-    @for $i from 1 to 13 {
-        .col-#{$i} {
-            float: left;
-            max-width: (100% / (12 / $i));
-            position: relative;
-            width: 100%;
-            padding-right: 8px;
-            padding-left: 8px;
-        }
-    }
     .pl-0 {
         padding-left: 0;
     }
@@ -460,6 +439,21 @@ body {
         margin-bottom: 0.125rem;
         font-weight: 700 !important;
         color: #6c757d;
+    }
+    .edu {
+        display: inline-block;
+        vertical-align: middle;
+        .icon {
+            float: left;
+            min-width: 40px;
+            .building {
+                width: 40px;
+            }
+        }
+        &-content {
+            float: left;
+            vertical-align: middle;
+        }
     }
     .list-unstyled {
         display: inline-block;
