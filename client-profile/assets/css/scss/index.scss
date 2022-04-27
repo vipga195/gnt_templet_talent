@@ -502,6 +502,7 @@ body {
         }
     }
     .custom-width {
+        display: inline-block;
         min-width: 80px;
         @extend .line-26;
 
@@ -734,6 +735,13 @@ body {
                 background: #e2f5f8;
                 color: #1c1c1c;
                 border: 1px dashed #e2f5f8;
+                .check {
+                    display: none !important;
+                }
+                .check-black {
+                    width: 8px;
+                    display: block !important;
+                }
             }
         }
         .icon {
@@ -742,6 +750,13 @@ body {
             margin-right: 0.25rem;
             .check-circle {
                 width: 8px;
+            }
+            .check {
+                width: 8px;
+            }
+            .check-black {
+                width: 8px;
+                display: none;
             }
         }
     }

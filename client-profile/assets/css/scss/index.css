@@ -440,6 +440,7 @@ body {
   .content .profile-name:not(:first-child) {
     margin-top: 0.5rem; }
   .content .custom-width {
+    display: inline-block;
     min-width: 80px; }
     .content .custom-width .icon {
       width: 15px;
@@ -608,12 +609,22 @@ body {
       background: #e2f5f8;
       color: #1c1c1c;
       border: 1px dashed #e2f5f8; }
+      .content .box-detail.active .check {
+        display: none !important; }
+      .content .box-detail.active .check-black {
+        width: 8px;
+        display: block !important; }
   .content .box .icon {
     width: 8px;
     min-width: 8px;
     margin-right: 0.25rem; }
     .content .box .icon .check-circle {
       width: 8px; }
+    .content .box .icon .check {
+      width: 8px; }
+    .content .box .icon .check-black {
+      width: 8px;
+      display: none; }
   .content .svg-container {
     width: 15px;
     height: 15px;
