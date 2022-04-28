@@ -90,16 +90,24 @@
                                                         <td style="width: 45%;">
                                                             <div
                                                                 class="block-matching-score__content pl-16 pr-16 top mt-15">
-                                                                <div class="progress-chart  input-value">
-                                                                    <span class="graph show"
-                                                                        style="--per:149deg;"></span>
+                                                                <div class="progress-chart  input-value clear">
+                                                                    <div class="progress-chart-bg"></div>
+                                                                    <div class="progress-chart-wrap"
+                                                                        style="width: 83%;">
+                                                                        <span class="graph show"></span>
+                                                                        <span class="round show"></span>
+                                                                        <span class="round-number show">83%</span>
+                                                                    </div>
                                                                     <span class="number-1 false">0%</span>
                                                                     <span class="number-2 false">100%</span>
-                                                                    <span class="round show"
-                                                                        style="--per:194deg;"></span>
-                                                                    <span class="round-number show"
-                                                                        style="--b:calc(51%); --l:calc(92% + 5px); --r:auto;">83%</span>
-                                                                    <span class="round-text show">Good</span>
+
+                                                                    <div class="round-wrap">
+                                                                        <span class="round-text show">Good</span>
+                                                                    </div>
+
+
+
+
                                                                 </div>
                                                                 <div class="label-graph-matching-score input-value">
                                                                     <div>
@@ -167,9 +175,9 @@
                                                                             Substitute</span>
                                                                     </p>
                                                                     <div
-                                                                        class="progress-bar-matching-score input-value">
-                                                                        <div class="progress-bar-block">
-                                                                            <div class="progress-bar-percent very-low"
+                                                                        class="progress-bar-matching-score input-value clear">
+                                                                        <div class="progress-bar-block float-left">
+                                                                            <div class="progress-bar-percent very-low float-left"
                                                                                 style="width: 0%;"></div>
                                                                         </div>
                                                                         <div class="progress-bar-text font-400">0%</div>
@@ -238,14 +246,19 @@
                                                             <div
                                                                 class="block-matching-score__content pl-16 pr-16 top mt-15">
                                                                 <div class="progress-chart  input-value">
-                                                                    <span class="graph show" style="--per:0deg;"></span>
+                                                                    <div class="progress-chart-bg"></div>
+                                                                    <div class="progress-chart-wrap" style="width: 0%;">
+                                                                        <span class="graph false"></span>
+                                                                        <span class="round false"></span>
+                                                                        <span class="round-number false">0%</span>
+                                                                    </div>
+
                                                                     <span class="number-1 highlight">0%</span>
                                                                     <span class="number-2 false">100%</span>
-                                                                    <span class="round show"
-                                                                        style="--per:45deg;"></span>
-                                                                    <span class="round-number false"
-                                                                        style="--b:calc(0%); --l:auto; --r:calc(100% + 5px);">0%</span>
-                                                                    <span class="round-text show">Very low</span>
+
+                                                                    <div class="round-wrap">
+                                                                        <span class="round-text show">Very low</span>
+                                                                    </div>
                                                                 </div>
                                                                 <div class="label-graph-matching-score input-value">
                                                                     <div>
@@ -288,9 +301,9 @@
                                                                             Substitute</span>
                                                                     </p>
                                                                     <div
-                                                                        class="progress-bar-matching-score input-value">
-                                                                        <div class="progress-bar-block">
-                                                                            <div class="progress-bar-percent very-low"
+                                                                        class="progress-bar-matching-score input-value clear">
+                                                                        <div class="progress-bar-block float-left">
+                                                                            <div class="progress-bar-percent very-low float-left"
                                                                                 style="width: 0%;"></div>
                                                                         </div>
                                                                         <div class="progress-bar-text font-400">0%</div>
@@ -421,7 +434,7 @@
                                     </div>
                                     <div class="card-content">
                                         <!-- đổi số theo step đang active sẽ tự hiện thông tin. vd step-1 step-2 ... -->
-                                        <div class="tracking clear ">
+                                        <div class="tracking clear step-4">
                                             <div class="tracking-step step-1 active">
                                                 <div class="icon input-value">
                                                     <img class="recruitment"
@@ -510,7 +523,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="step-screen active step-screening">
+                                        <div class="step-screen  step-screening">
                                             <div class="box success ">
                                                 <div class="box-item reason">
                                                     <div class="box-title">REASON</div>
@@ -868,7 +881,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="step-screen step-offer">
+                                        <div class="step-screen step-offer ">
                                             <h4 class="font-300 mb-15" style="display: inline-flex;">
                                                 <span class="mr-2">Salary: </span>
                                                 <b class="font-700 color-01707b input-value"> USD 120</b>
@@ -985,7 +998,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="step-screen step-hire">
+                                        <div class="step-screen step-hire active">
                                             <h4 class="font-300 mb-1 w-100" style="display: inline-flex;">
                                                 <span class="mr-2 font-24">Salary: </span>
                                                 <b class="font-700 color-01707b input-value"> USD 120</b>
