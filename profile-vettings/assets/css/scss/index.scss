@@ -72,7 +72,7 @@ body {
     }
     svg {
         overflow: hidden;
-        vertical-align: middle;
+        @extend .middle;
     }
     p {
         margin: 0px;
@@ -106,8 +106,8 @@ body {
         box-sizing: content-box;
         height: 0;
         overflow: visible;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin-top: 16px;
+        margin-bottom: 16px;
         border: 0;
         @extend .middle;
     }
@@ -140,15 +140,11 @@ body {
         // flex-wrap: wrap;
         margin-right: -8px;
         margin-left: -8px;
-        &::after {
-            display: block;
-            content: "";
-            clear: both;
-        }
+        @extend .clear;
     }
     @for $i from 1 to 13 {
         .col-#{$i} {
-            float: left;
+            @extend .float-left;
             max-width: (100% / (12 / $i));
             position: relative;
             width: 100%;
@@ -187,25 +183,25 @@ body {
         margin-top: 7px;
     }
     .mt-3 {
-        margin-top: 1rem;
+        margin-top: 16px;
     }
     .mt-2 {
-        margin-top: 0.5rem;
+        margin-top: 8px;
     }
     .mt-1 {
-        margin-top: 0.25rem;
+        margin-top: 4px;
     }
     .mr-2 {
-        margin-right: 0.5rem;
+        margin-right: 8px;
     }
     .mb-0 {
         margin-bottom: 0 !important;
     }
     .mb-2 {
-        margin-bottom: 0.25rem;
+        margin-bottom: 4px;
     }
     .mb-1 {
-        margin-bottom: 0.125rem;
+        margin-bottom: 2px;
     }
     .font-700 {
         font-weight: 700;
@@ -253,9 +249,8 @@ body {
         margin-left: auto;
     }
     .icon {
-        display: inline-block;
         opacity: 1;
-        vertical-align: middle;
+        @extend .middle;
     }
     .d-flex {
         display: block;
@@ -293,7 +288,7 @@ body {
     background: #fff;
     padding: 12px;
     border-radius: 2px;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.08) !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08) !important;
     margin-bottom: 12px;
     &-title {
         display: inline-block;
@@ -348,18 +343,17 @@ body {
     }
     .location {
         color: #ffffffb8;
-        display: inline-block;
-        vertical-align: middle;
+        @extend .middle;
         .icon {
             max-width: 5px;
-            margin-right: 0.25rem;
+            margin-right: 4px;
             .marker {
                 width: 5px;
             }
         }
     }
     .progress-circle {
-        margin: 0.75rem auto;
+        margin: 12px auto;
 
         width: 75px;
         height: 75px;
@@ -387,7 +381,7 @@ body {
         }
     }
     .infomation {
-        padding-top: 0.75rem;
+        padding-top: 12px;
     }
     .choose {
         background: #f8f9fa;
@@ -440,7 +434,7 @@ body {
         border-radius: 2px;
         &-item {
             &:not(:last-child) {
-                margin-bottom: 0.5rem;
+                margin-bottom: 8px;
             }
         }
         &-label {
@@ -449,7 +443,7 @@ body {
             @extend .font-14;
             margin-bottom: 0px;
             .icon {
-                margin-right: 0.25rem;
+                margin-right: 4px;
                 max-width: 9px;
                 .money {
                     width: 9px;
@@ -514,14 +508,14 @@ body {
 
         .icon {
             max-width: 13.5px;
-            margin-right: 0.25rem;
+            margin-right: 4px;
             margin-bottom: 1px;
             .level {
                 width: 13.5px;
             }
         }
         &:not(:first-child) {
-            margin-top: 0.5rem;
+            margin-top: 8px;
         }
     }
     .custom-width {
@@ -553,8 +547,8 @@ body {
         }
     }
     .job {
-        margin-top: 0.25rem;
-        margin-bottom: 0.125rem;
+        margin-top: 4px;
+        margin-bottom: 2px;
         font-weight: 700 !important;
         color: #6c757d;
     }
@@ -562,22 +556,21 @@ body {
         &__title {
             @extend .font-20;
             @extend .line-28;
-            margin-bottom: 0.5rem;
+            margin-bottom: 8px;
         }
     }
     .edu {
-        display: inline-block;
-        vertical-align: middle;
+        @extend .middle;
         .icon {
-            float: left;
+            @extend .float-left;
             min-width: 40px;
             .building {
                 width: 40px;
             }
         }
         &-content {
-            float: left;
-            vertical-align: middle;
+            @extend .float-left;
+            @extend .middle;
         }
     }
     .major {
@@ -585,7 +578,7 @@ body {
             display: block;
         }
         &-skill {
-            max-width: calc(100% - 22px);
+            max-width: 440px;
         }
         .icon {
             width: 15px;
@@ -599,7 +592,7 @@ body {
         display: block;
         border-radius: 2px;
         align-items: center;
-        padding: 0.75rem 0;
+        padding: 12px 0;
         overflow: auto;
         &.step {
             &-1 {
@@ -655,7 +648,7 @@ body {
         }
         &-step {
             display: block;
-            float: left;
+            @extend .float-left;
             text-align: center;
             opacity: 0.5;
             &.active {
@@ -664,7 +657,7 @@ body {
         }
         .icon {
             width: 24px;
-            margin-bottom: 0.25rem;
+            margin-bottom: 4px;
             .recruitment {
                 width: 24px;
             }
@@ -682,8 +675,8 @@ body {
             }
         }
         .line {
-            float: left;
-            width: 44px;
+            @extend .float-left;
+            width: 40px;
             z-index: 1;
             border-top: 0.5px dashed;
         }
@@ -708,7 +701,7 @@ body {
     }
     .step-screen {
         display: none;
-        .active {
+        &.active {
             display: block;
         }
     }
@@ -730,7 +723,7 @@ body {
         &-payment {
             display: inline-block;
             align-items: center;
-            padding: 1px 5px;
+            padding: 2px 5px;
             background: #03515959;
             color: #fff;
             @extend .font-14;
@@ -740,8 +733,7 @@ body {
             .icon {
                 width: 10px;
                 height: 9px;
-                margin-right: 0.125rem;
-                vertical-align: middle;
+                margin-right: 2px;
                 .credit {
                     width: 10px;
                 }
@@ -779,8 +771,8 @@ body {
             .content-title {
                 margin-bottom: 6px;
                 color: #0d7b85;
-                font-size: 0.7rem;
-                line-height: 0.75rem;
+                font-size: 11px;
+                line-height: 12px;
                 font-weight: bold;
             }
         }
@@ -811,7 +803,7 @@ body {
         .icon {
             width: 8px;
             min-width: 8px;
-            margin-right: 0.25rem;
+            margin-right: 4px;
             .check-circle {
                 width: 8px;
             }
@@ -838,7 +830,7 @@ body {
         color: rgb(3, 81, 89);
         .icon {
             width: 6px;
-            margin-right: 0.125rem;
+            margin-right: 2px;
             .calendar {
                 width: 6px;
             }
@@ -852,7 +844,7 @@ body {
     &__title {
         display: block;
         align-items: center;
-        margin-bottom: 0.75rem;
+        margin-bottom: 12px;
         width: 100%;
     }
 
@@ -886,6 +878,8 @@ body {
             overflow-y: overlay;
         }
         .tag-skill-matching {
+            display: block;
+            width: 100%;
             .tag-skill-item {
                 padding: 4px 8px;
                 border-radius: 2px;
@@ -894,7 +888,6 @@ body {
                 display: inline-block;
                 background: #f2f5f5;
                 @extend .font-14;
-                max-width: 100%;
                 &.match {
                     background: #dff0ff;
                     color: #033f72;
@@ -916,7 +909,7 @@ body {
     .block-info-matching {
         font-weight: 500;
         position: relative;
-        margin-bottom: 0.5rem;
+        margin-bottom: 8px;
         .view-more {
             @extend .font-12;
             .text-collapse {
@@ -951,7 +944,7 @@ body {
         }
         .no-data {
             display: inline-block;
-            max-width: calc(100% - 19px);
+            max-width: 122px;
         }
     }
     .icon {
@@ -994,7 +987,8 @@ body {
         height: 40.5px;
         position: absolute;
         border: 6px solid #e5e5e5;
-        border-radius: 90px 90px 0 0;
+        border-top-right-radius: 81px 81px;
+        border-top-left-radius: 81px 81px;
         border-bottom: none;
     }
     .very-low & {
@@ -1046,7 +1040,7 @@ body {
         width: 81px;
         height: 40.5px;
         position: absolute;
-        overflow: hidden;
+        // overflow: hidden;
         &:after {
             width: 81px;
             height: 40.5px;
@@ -1054,10 +1048,12 @@ body {
             top: 100%;
             border: 6px solid #0000001a;
             content: "";
-            border-radius: 0 0 90px 90px;
+            border-bottom-right-radius: 81px 81px;
+            border-bottom-left-radius: 81px 81px;
             border-top: none;
             transform-origin: center top;
             transform: rotate(0deg);
+            border-color: #f44336;
         }
         &.show:after {
             transform: rotate(var(--per, "0deg"));
@@ -1065,7 +1061,7 @@ body {
     }
     .round-text {
         position: absolute;
-        top: calc(100% - 10px);
+        top: 31px;
         left: 0%;
         transform: translate(-50%, -50%);
         opacity: 0;
@@ -1136,14 +1132,14 @@ body {
     .number-1 {
         @extend .font-12;
         position: absolute;
-        top: calc(100% + 5px);
+        top: 45px;
         left: -2px;
     }
     .number-2 {
         @extend .font-12;
         position: absolute;
         right: -8px;
-        top: calc(100% + 5px);
+        top: 45px;
     }
     .highlight {
         font-weight: 700;
@@ -1169,10 +1165,11 @@ body {
     display: block;
     text-align: left;
     @extend .font-12;
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
     .progress-bar-block {
         height: 6px;
-        width: calc(100% - 30px);
+        width: 123px;
+        min-width: 123px;
         background-color: #e8f0f1;
         border-radius: 4px;
         display: inline-block;
