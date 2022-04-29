@@ -1,0 +1,203 @@
+$n: 100;
+$font-size: 12px;
+.font-36 {
+    font-size: 36px;
+}
+.font-30 {
+    font-size: 30px;
+}
+.font-24 {
+    font-size: 24px;
+}
+.font-20 {
+    font-size: 20px;
+}
+.font-18 {
+    font-size: 18px;
+}
+.font-16 {
+    font-size: 16px;
+}
+.font-14 {
+    font-size: 14px;
+}
+.font-12 {
+    font-size: 12px;
+}
+// line
+.line-30 {
+    line-height: 30px;
+}
+.line-28 {
+    line-height: 28px;
+}
+.line-26 {
+    line-height: 26px;
+}
+
+.clear {
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+.float-right {
+    float: right;
+}
+.float-left {
+    float: left;
+}
+.middle {
+    display: inline-block !important;
+    vertical-align: middle !important;
+}
+.top {
+    display: inline-block !important;
+    vertical-align: top !important;
+}
+
+.d-none {
+    display: none !important;
+}
+.d-block {
+    display: block !important;
+}
+.d-inline-block {
+    display: inline-block !important;
+}
+.d-inline-flex {
+    display: inline-flex !important;
+}
+.w-100 {
+    width: 100%;
+}
+.h-100 {
+    height: 100%;
+}
+.w-50 {
+    width: 50%;
+}
+.h-50 {
+    height: 50%;
+}
+.w-0 {
+    width: 0%;
+}
+.h-0 {
+    height: 0%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+@for $i from 1 to 13 {
+    .col-#{$i} {
+        max-width: ceil((100% / (12 / $i)) * $n) / $n;
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@for $i from 0 to 6 {
+    .p-#{$i} {
+        padding: ($i * 0.5rem);
+    }
+    .pl-#{$i} {
+        padding-left: ($i * 0.5rem);
+    }
+    .pr-#{$i} {
+        padding-right: ($i * 0.5rem);
+    }
+    .pt-#{$i} {
+        padding-top: ($i * 0.5rem);
+    }
+    .pb-#{$i} {
+        padding-bottom: ($i * 0.5rem);
+    }
+
+    .m-#{$i} {
+        margin: ($i * 0.5rem);
+    }
+    .ml-#{$i} {
+        margin-left: ($i * 0.5rem);
+    }
+    .mr-#{$i} {
+        margin-right: ($i * 0.5rem);
+    }
+    .mt-#{$i} {
+        margin-top: ($i * 0.5rem);
+    }
+    .mb-#{$i} {
+        margin-bottom: ($i * 0.5rem);
+    }
+}
+
+body {
+    * {
+        outline: 0 !important;
+    }
+    margin: 0 !important;
+
+    @extend .font-16;
+    line-height: 12px;
+    font-family: "Roboto", sans-serif;
+    color: #343a40;
+    img {
+        width: 100%;
+        max-width: 100%;
+    }
+    svg {
+        overflow: hidden;
+        @extend .middle;
+    }
+    p {
+        margin: 0px;
+        @extend .font-16;
+        @extend .line-26;
+        font-weight: 300;
+        color: #022629;
+    }
+    h2 {
+        margin: 0px;
+        @extend .font-36;
+        line-height: 23px;
+    }
+    h3 {
+        margin: 0px;
+        @extend .font-30;
+        line-height: 20px;
+    }
+    h4 {
+        margin: 0px;
+        @extend .font-24;
+        line-height: 14px;
+    }
+    h5 {
+        margin: 0px;
+        @extend .font-18;
+        @extend .line-28;
+    }
+
+    hr {
+        box-sizing: content-box;
+        height: 0;
+        overflow: visible;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        border: 0;
+        @extend .middle;
+    }
+    table {
+        width: 100%;
+    }
+    td {
+        vertical-align: top;
+    }
+}

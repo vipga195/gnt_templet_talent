@@ -255,6 +255,9 @@ body {
     .d-flex {
         display: block;
     }
+    .border-spacing-0 {
+        border-spacing: 0;
+    }
     .text-area {
         color: #495057;
         // border-color: #098594;
@@ -319,7 +322,7 @@ body {
     // height: 100%;
     .top-info {
         background: #005563;
-        padding: 15px 0px;
+        padding: 30px 0px;
     }
 
     .avatar {
@@ -560,7 +563,8 @@ body {
         }
     }
     .edu {
-        @extend .middle;
+        // @extend .middle;
+        @extend .clear;
         .icon {
             @extend .float-left;
             min-width: 40px;
@@ -655,6 +659,9 @@ body {
             opacity: 0.5;
             &.active {
                 opacity: 1;
+                .text-step-number {
+                    font-weight: 700 !important;
+                }
             }
         }
         .icon {
@@ -779,13 +786,14 @@ body {
             }
         }
         &-detail {
-            display: block;
+            display: inline-block;
             align-items: center;
             margin-bottom: 6px;
             padding: 6px;
             background: #ffffff29;
             border: 1px dashed #b2d0d3;
             color: #b2d0d3;
+            width: 100%;
             &.active {
                 background: #e2f5f8;
                 color: #1c1c1c;
@@ -795,7 +803,7 @@ body {
                 }
                 .check-black {
                     width: 8px;
-                    display: block !important;
+                    display: inline-block !important;
                 }
             }
             .icon {
@@ -1138,19 +1146,18 @@ body {
         tr {
             background-color: #ffffff;
             border: 1px solid #f8f9fa;
-            padding: 0.35em;
+            padding: 3px;
             min-height: 25px;
             th {
-                font-size: 0.4em;
-                letter-spacing: 0.1em;
+                @extend .font-16;
                 text-transform: capitalize;
-                font-weight: 500;
+                font-weight: 300;
                 color: #005a63;
-                padding: 0.625em;
+                padding: 6px;
                 text-align: center;
             }
             td {
-                padding: 0.625em;
+                padding: 6px;
                 text-align: center;
                 font-weight: 300;
                 .link-edit {
@@ -1173,7 +1180,7 @@ body {
             border-top: 0px;
             &__label {
                 font-weight: bold;
-                color: rgb(10, 116, 126);
+                color: #0a747e;
                 @extend .font-18;
                 @extend .line-28;
             }

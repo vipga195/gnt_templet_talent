@@ -13,7 +13,7 @@
 .font-18, body h5, .content .box-title, .progress-chart .round-number, .progress-chart .highlight, .table-interview-time .schedule-interview__label {
   font-size: 9px; }
 
-.font-16, body, body p, .container .text-area, .card-label, .card-block, .content .tracking .text-step-hired .text-step-number, .content .tracking .text-step-hired .count-tracking-step, .content .box-detail > span, .progress-chart .round-text, .table-interview-time table {
+.font-16, body, body p, .container .text-area, .card-label, .card-block, .content .tracking .text-step-hired .text-step-number, .content .tracking .text-step-hired .count-tracking-step, .content .box-detail > span, .progress-chart .round-text, .table-interview-time table, .table-interview-time table tr th {
   font-size: 8px; }
 
 .font-14, .card-label--item, .content .choose-item, .content .salary-label, .content .process > span, .content .status-payment, .content .offer-date, .block-matching-score .tag-skill-matching-block .tag-skill-matching .tag-skill-item, .block-matching-score .no-data-matching, .label-graph-matching-score, .table-interview-time table tr td .link-edit {
@@ -31,7 +31,7 @@
 .line-26, body p, .card-label, .content .custom-width {
   line-height: 13px; }
 
-.clear::after, .container .row::after {
+.clear::after, .container .row::after, .content .edu::after {
   display: block;
   content: "";
   clear: both; }
@@ -42,7 +42,7 @@
 .float-left, .container .col-1, .container .col-2, .container .col-3, .container .col-4, .container .col-5, .container .col-6, .container .col-7, .container .col-8, .container .col-9, .container .col-10, .container .col-11, .container .col-12, .content .edu .icon, .content .edu-content, .content .tracking-step, .content .tracking .line, .progress-chart .number-1 {
   float: left; }
 
-.middle, body svg, body hr, .container .icon, .content .location, .content .edu, .content .edu-content, .content .box-detail .icon, .content .box-detail > span {
+.middle, body svg, body hr, .container .icon, .content .location, .content .edu-content, .content .box-detail .icon, .content .box-detail > span {
   display: inline-block !important;
   vertical-align: middle !important; }
 
@@ -248,6 +248,8 @@ body {
     opacity: 1; }
   .container .d-flex {
     display: block; }
+  .container .border-spacing-0 {
+    border-spacing: 0; }
   .container .text-area {
     color: #495057;
     outline: 0;
@@ -294,7 +296,7 @@ body {
   padding-bottom: 36px; }
   .content .top-info {
     background: #005563;
-    padding: 15px 0px; }
+    padding: 30px 0px; }
   .content .avatar {
     position: relative;
     overflow: hidden; }
@@ -529,6 +531,8 @@ body {
       opacity: 0.5; }
       .content .tracking-step.active {
         opacity: 1; }
+        .content .tracking-step.active .text-step-number {
+          font-weight: 700 !important; }
     .content .tracking .icon {
       width: 24px;
       margin-bottom: 4px; }
@@ -614,13 +618,14 @@ body {
       line-height: 12px;
       font-weight: bold; }
   .content .box-detail {
-    display: block;
+    display: inline-block;
     align-items: center;
     margin-bottom: 6px;
     padding: 6px;
     background: #ffffff29;
     border: 1px dashed #b2d0d3;
-    color: #b2d0d3; }
+    color: #b2d0d3;
+    width: 100%; }
     .content .box-detail.active {
       background: #e2f5f8;
       color: #1c1c1c;
@@ -629,7 +634,7 @@ body {
         display: none !important; }
       .content .box-detail.active .check-black {
         width: 8px;
-        display: block !important; }
+        display: inline-block !important; }
     .content .box-detail > span {
       max-width: 210px; }
   .content .box .icon {
@@ -862,18 +867,16 @@ body {
   .table-interview-time table tr {
     background-color: #ffffff;
     border: 1px solid #f8f9fa;
-    padding: 0.35em;
+    padding: 3px;
     min-height: 25px; }
     .table-interview-time table tr th {
-      font-size: 0.4em;
-      letter-spacing: 0.1em;
       text-transform: capitalize;
-      font-weight: 500;
+      font-weight: 300;
       color: #005a63;
-      padding: 0.625em;
+      padding: 6px;
       text-align: center; }
     .table-interview-time table tr td {
-      padding: 0.625em;
+      padding: 6px;
       text-align: center;
       font-weight: 300; }
       .table-interview-time table tr td .link-edit {
