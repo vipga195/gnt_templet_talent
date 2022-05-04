@@ -35,6 +35,9 @@ $width: 700px;
     display: inline-block !important;
     vertical-align: top !important;
 }
+.text-capitalize {
+    text-transform: capitalize !important;
+}
 body {
     * {
         outline: 0 !important;
@@ -141,6 +144,21 @@ body {
     .mb-0 {
         margin-bottom: 0 !important;
     }
+    .mt-0 {
+        margin-top: 0 !important;
+    }
+    .mt-1 {
+        margin-top: 2px !important;
+    }
+    .mb-1 {
+        margin-bottom: 2px !important;
+    }
+    .m-0 {
+        margin: 0 !important;
+    }
+    .p-0 {
+        padding: 0 !important;
+    }
     .font-700 {
         font-weight: 700;
     }
@@ -205,18 +223,33 @@ body {
         overflow: hidden;
 
         &-img {
-            width: 75px;
-            height: 75px;
+            width: 70px;
+            height: 70px;
             border-radius: 2px;
 
             background-color: #fff;
             color: #e2f5f8;
+
             img {
                 border-radius: 2px;
-                width: 75px;
-                height: 75px;
+                width: 70px;
+                height: 70px;
                 object-fit: contain;
             }
+        }
+        &-text {
+            border-radius: 2px;
+            width: 70px;
+            height: 70px;
+
+            background-color: #bdf4e5;
+            color: #333333;
+            text-align: center;
+
+            display: block;
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 70px;
         }
     }
     .location {
@@ -448,7 +481,7 @@ body {
     .custom-width {
         min-width: 75px;
         line-height: 13px;
-
+        display: inline-block;
         .icon {
             width: 15px;
             height: 15px;
@@ -495,7 +528,7 @@ body {
         }
     }
     .list-unstyled {
-        display: inline-block;
+        display: block;
     }
 }
 .line-chart {
@@ -551,5 +584,26 @@ body {
         .excellent & {
             color: #35d895;
         }
+    }
+}
+.stamp {
+    position: relative;
+    &-item {
+        display: block;
+        color: #ffffffd4;
+        text-align: center;
+        text-transform: capitalize;
+        transform: rotateZ(-42deg);
+        position: absolute;
+        width: 100px;
+        top: -65px;
+        left: -35px;
+        @extend .font-14;
+    }
+    .vetting {
+        background-color: #00a5b9;
+    }
+    .invited {
+        background-color: #00505d;
     }
 }

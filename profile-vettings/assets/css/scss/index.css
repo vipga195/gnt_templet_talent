@@ -50,6 +50,9 @@
   display: inline-block !important;
   vertical-align: top !important; }
 
+.text-capitalize {
+  text-transform: capitalize !important; }
+
 body {
   margin: 0 !important;
   line-height: 12px;
@@ -206,13 +209,13 @@ body {
   .container .mt-2 {
     margin-top: 8px; }
   .container .mt-1 {
-    margin-top: 4px; }
+    margin-top: 2px; }
   .container .mr-2 {
     margin-right: 8px; }
   .container .mb-0 {
     margin-bottom: 0 !important; }
   .container .mb-2 {
-    margin-bottom: 4px; }
+    margin-bottom: 8px; }
   .container .mb-1 {
     margin-bottom: 2px; }
   .container .font-700 {
@@ -311,6 +314,17 @@ body {
         height: 75px;
         border-radius: 2px;
         object-fit: contain; }
+    .content .avatar-text {
+      border-radius: 2px;
+      width: 75px;
+      height: 75px;
+      background-color: #bdf4e5;
+      color: #333333;
+      text-align: center;
+      display: block;
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 75px; }
   .content .location {
     color: #ffffffb8; }
     .content .location .icon {
@@ -528,7 +542,8 @@ body {
       text-align: center;
       max-width: 12%;
       width: 100%;
-      opacity: 0.5; }
+      opacity: 0.5;
+      font-weight: 300; }
       .content .tracking-step.active {
         opacity: 1; }
         .content .tracking-step.active .text-step-number {

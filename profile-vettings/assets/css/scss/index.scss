@@ -56,6 +56,9 @@ $width: 700px;
     display: inline-block !important;
     vertical-align: top !important;
 }
+.text-capitalize {
+    text-transform: capitalize !important;
+}
 body {
     * {
         outline: 0 !important;
@@ -189,7 +192,7 @@ body {
         margin-top: 8px;
     }
     .mt-1 {
-        margin-top: 4px;
+        margin-top: 2px;
     }
     .mr-2 {
         margin-right: 8px;
@@ -198,7 +201,7 @@ body {
         margin-bottom: 0 !important;
     }
     .mb-2 {
-        margin-bottom: 4px;
+        margin-bottom: 8px;
     }
     .mb-1 {
         margin-bottom: 2px;
@@ -342,6 +345,20 @@ body {
                 border-radius: 2px;
                 object-fit: contain;
             }
+        }
+        &-text {
+            border-radius: 2px;
+            width: 75px;
+            height: 75px;
+
+            background-color: #bdf4e5;
+            color: #333333;
+            text-align: center;
+
+            display: block;
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 75px;
         }
     }
     .location {
@@ -657,6 +674,7 @@ body {
             max-width: 12%;
             width: 100%;
             opacity: 0.5;
+            font-weight: 300;
             &.active {
                 opacity: 1;
                 .text-step-number {

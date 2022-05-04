@@ -10,7 +10,7 @@
 .font-16, body p, .card-label {
   font-size: 8px; }
 
-.font-14, .card-label--item, .card .choose-item, .card .salary-label, .card .process > span {
+.font-14, .card-label--item, .card .choose-item, .card .salary-label, .card .process > span, .stamp-item {
   font-size: 7px; }
 
 .clear::after {
@@ -31,6 +31,9 @@
 .top {
   display: inline-block !important;
   vertical-align: top !important; }
+
+.text-capitalize {
+  text-transform: capitalize !important; }
 
 body {
   margin: 0 !important;
@@ -112,6 +115,16 @@ body {
     margin-top: 7px; }
   .container .mb-0 {
     margin-bottom: 0 !important; }
+  .container .mt-0 {
+    margin-top: 0 !important; }
+  .container .mt-1 {
+    margin-top: 2px !important; }
+  .container .mb-1 {
+    margin-bottom: 2px !important; }
+  .container .m-0 {
+    margin: 0 !important; }
+  .container .p-0 {
+    padding: 0 !important; }
   .container .font-700 {
     font-weight: 700; }
   .container .font-600 {
@@ -157,16 +170,27 @@ body {
     position: relative;
     overflow: hidden; }
     .content .avatar-img {
-      width: 75px;
-      height: 75px;
+      width: 70px;
+      height: 70px;
       border-radius: 2px;
       background-color: #fff;
       color: #e2f5f8; }
       .content .avatar-img img {
         border-radius: 2px;
-        width: 75px;
-        height: 75px;
+        width: 70px;
+        height: 70px;
         object-fit: contain; }
+    .content .avatar-text {
+      border-radius: 2px;
+      width: 70px;
+      height: 70px;
+      background-color: #bdf4e5;
+      color: #333333;
+      text-align: center;
+      display: block;
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 70px; }
   .content .location {
     color: #fff;
     opacity: 0.6;
@@ -332,7 +356,8 @@ body {
       margin-top: 0; }
   .card .custom-width {
     min-width: 75px;
-    line-height: 13px; }
+    line-height: 13px;
+    display: inline-block; }
     .card .custom-width .icon {
       width: 15px;
       height: 15px;
@@ -368,7 +393,7 @@ body {
       float: left;
       vertical-align: middle; }
   .card .list-unstyled {
-    display: inline-block; }
+    display: block; }
 
 .line-chart {
   height: 5px;
@@ -408,5 +433,22 @@ body {
   color: #058bfc; }
 .excellent .info-top-profile-text-strength .input-value {
   color: #35d895; }
+
+.stamp {
+  position: relative; }
+  .stamp-item {
+    display: block;
+    color: #ffffffd4;
+    text-align: center;
+    text-transform: capitalize;
+    transform: rotateZ(-42deg);
+    position: absolute;
+    width: 100px;
+    top: -65px;
+    left: -35px; }
+  .stamp .vetting {
+    background-color: #00a5b9; }
+  .stamp .invited {
+    background-color: #00505d; }
 
 /*# sourceMappingURL=index.css.map */
