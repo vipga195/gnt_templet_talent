@@ -109,9 +109,15 @@ body {
 }
 
 .layout-templet {
-    background: #e5f2f4;
+    // background: #e5f2f4;
     // background: rgba(0, 131, 143, 0.1);
     // background-size: 22px 22px;
+    .line-templet {
+        height: 2px;
+        width: 100%;
+        background-color: #bebebe;
+        margin: 0px 0 12px;
+    }
 }
 
 .container {
@@ -224,10 +230,9 @@ body {
 
         &-img {
             width: 70px;
-            height: 70px;
             border-radius: 2px;
 
-            background-color: #fff;
+            // background-color: #fff;
             color: #e2f5f8;
 
             img {

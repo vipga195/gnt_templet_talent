@@ -101,8 +101,11 @@ body {
   /* Firefox, other Gecko */
   box-sizing: border-box; }
 
-.layout-templet {
-  background: #e5f2f4; }
+.layout-templet .line-templet {
+  height: 2px;
+  width: 100%;
+  background-color: #bebebe;
+  margin: 0px 0 12px; }
 
 .container {
   width: 700px;
@@ -315,11 +318,9 @@ body {
       width: 75px;
       height: 75px;
       border-radius: 2px;
-      background-color: #fff;
       color: #e2f5f8; }
       .content .avatar-img img {
         width: 75px;
-        height: 75px;
         border-radius: 2px;
         object-fit: contain; }
     .content .avatar-text {
@@ -422,27 +423,27 @@ body {
   .content .remote {
     display: block; }
   .content .bar-language-profile {
-    margin-top: 4px;
+    margin-top: 8px;
     position: relative;
     overflow-x: hidden;
+    animation: 3s;
     max-width: 66.66667%; }
-    .content .bar-language-profile::before {
-      width: 100%;
-      height: 3px;
-      content: "";
-      display: block;
-      position: absolute;
-      background: #e9ecef;
-      bottom: 0; }
     .content .bar-language-profile-item {
       width: 100%;
-      height: 3px;
+      height: 6px;
       top: 0px;
       left: 0px;
       background: #e9ecef;
       display: block;
       position: relative; }
+      .content .bar-language-profile-item-bg {
+        width: 100%;
+        display: block;
+        background: #e9edef;
+        bottom: 0; }
       .content .bar-language-profile-item-level {
+        height: 6px;
+        position: absolute;
         background: #117a8b; }
   .content .item {
     margin-top: 8px; }
@@ -572,7 +573,7 @@ body {
       z-index: 1;
       border-top: 0.5px dashed; }
     .content .tracking .text-step-number {
-      color: #f8f9fa;
+      color: #c8c8c8;
       font-weight: 200;
       white-space: nowrap; }
     .content .tracking .text-step-hired {
@@ -617,6 +618,10 @@ body {
     .content .status-payment-waiting {
       line-height: 10px;
       color: red; }
+    .content .status-payment.fail {
+      background-color: red; }
+    .content .status-payment.success {
+      background-color: #216d78; }
   .content .box-item:not(:last-child) {
     border-bottom: 1px solid #e2f5f8; }
   .content .box-title {
@@ -730,8 +735,7 @@ body {
       .block-matching-score .tag-skill-matching-block .tag-skill-matching .tag-skill-item > span {
         white-space: nowrap;
         overflow: hidden;
-        text-overflow: ellipsis;
-        text-transform: capitalize; }
+        text-overflow: ellipsis; }
   .block-matching-score .block-info-matching {
     font-weight: 500;
     position: relative;

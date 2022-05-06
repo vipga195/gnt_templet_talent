@@ -92,8 +92,11 @@ body {
   /* Firefox, other Gecko */
   box-sizing: border-box; }
 
-.layout-templet {
-  background: #e5f2f4; }
+.layout-templet .line-templet {
+  height: 2px;
+  width: 100%;
+  background-color: #bebebe;
+  margin: 0px 0 12px; }
 
 .container {
   width: 700px;
@@ -171,9 +174,7 @@ body {
     overflow: hidden; }
     .content .avatar-img {
       width: 70px;
-      height: 70px;
       border-radius: 2px;
-      background-color: #fff;
       color: #e2f5f8; }
       .content .avatar-img img {
         border-radius: 2px;
