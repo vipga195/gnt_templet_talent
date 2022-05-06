@@ -13,7 +13,7 @@
 .font-18, body h5, .content .box-title, .progress-chart .round-number, .progress-chart .highlight, .table-interview-time .schedule-interview__label {
   font-size: 9px; }
 
-.font-16, body, body p, .container .text-area, .card-label, .card-block, .content .tracking .text-step-hired .text-step-number, .content .tracking .text-step-hired .count-tracking-step, .content .box-detail > span, .progress-chart .round-text, .table-interview-time table, .table-interview-time table tr th {
+.font-16, body, body p, .container .text-area, .card-label, .card-block, .content .tracking .text-step-number, .content .tracking .text-step-hired .count-tracking-step, .content .box-detail > span, .progress-chart .round-text, .table-interview-time table, .table-interview-time table tr th {
   font-size: 8px; }
 
 .font-14, .card-label--item, .content .choose-item, .content .salary-label, .content .process > span, .content .status-payment, .content .offer-date, .block-matching-score .tag-skill-matching-block .tag-skill-matching .tag-skill-item, .block-matching-score .no-data-matching, .label-graph-matching-score, .table-interview-time table tr td .link-edit {
@@ -198,6 +198,10 @@ body {
     padding-left: 8px; }
   .container .pr-16 {
     padding-right: 8px; }
+  .container .pt-2 {
+    padding-top: 8px; }
+  .container .pt-1 {
+    padding-top: 2px; }
   .container .p-0 {
     padding: 0; }
   .container .mb-15 {
@@ -228,6 +232,10 @@ body {
     font-weight: 400; }
   .container .font-300 {
     font-weight: 300; }
+  .container .font-200 {
+    font-weight: 200; }
+  .container .font-100 {
+    font-weight: 100; }
   .container .align-self-center {
     align-self: center !important; }
   .container .align-items-center {
@@ -542,12 +550,10 @@ body {
       text-align: center;
       max-width: 12%;
       width: 100%;
-      opacity: 0.5;
       font-weight: 300; }
-      .content .tracking-step.active {
-        opacity: 1; }
-        .content .tracking-step.active .text-step-number {
-          font-weight: 700 !important; }
+      .content .tracking-step.active .text-step-number {
+        color: #022528;
+        font-weight: 700; }
     .content .tracking .icon {
       width: 24px;
       margin-bottom: 4px; }
@@ -565,6 +571,10 @@ body {
       width: 9%;
       z-index: 1;
       border-top: 0.5px dashed; }
+    .content .tracking .text-step-number {
+      color: #f8f9fa;
+      font-weight: 200;
+      white-space: nowrap; }
     .content .tracking .text-step-hired {
       display: inline-block;
       margin-top: 0;
@@ -572,10 +582,6 @@ body {
       color: #015b65;
       width: 100%;
       text-align: center; }
-      .content .tracking .text-step-hired .text-step-number {
-        color: #022528;
-        font-weight: 300;
-        white-space: nowrap; }
       .content .tracking .text-step-hired .count-tracking-step {
         font-weight: 700; }
   .content .step-screen {
@@ -597,7 +603,7 @@ body {
     display: inline-block;
     align-items: center;
     padding: 2px 5px;
-    background: #03515959;
+    background: #a7c2c5;
     color: #fff;
     line-height: 10px;
     margin-left: 4px;
@@ -751,6 +757,8 @@ body {
     .block-matching-score .no-data-matching .no-data {
       display: inline-block;
       max-width: 120px; }
+    .block-matching-score .no-data-matching td:first-child {
+      vertical-align: middle; }
   .block-matching-score .icon {
     width: 17px; }
     .block-matching-score .icon .technical {

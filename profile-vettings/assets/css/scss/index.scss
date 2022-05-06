@@ -176,6 +176,12 @@ body {
     .pr-16 {
         padding-right: 8px;
     }
+    .pt-2 {
+        padding-top: 8px;
+    }
+    .pt-1 {
+        padding-top: 2px;
+    }
     .p-0 {
         padding: 0;
     }
@@ -220,6 +226,12 @@ body {
     }
     .font-300 {
         font-weight: 300;
+    }
+    .font-200 {
+        font-weight: 200;
+    }
+    .font-100 {
+        font-weight: 100;
     }
 
     .align-self-center {
@@ -673,15 +685,15 @@ body {
             text-align: center;
             max-width: 12%;
             width: 100%;
-            opacity: 0.5;
             font-weight: 300;
             &.active {
-                opacity: 1;
                 .text-step-number {
-                    font-weight: 700 !important;
+                    color: #022528;
+                    font-weight: 700;
                 }
             }
         }
+
         .icon {
             width: 24px;
             margin-bottom: 4px;
@@ -707,6 +719,13 @@ body {
             z-index: 1;
             border-top: 0.5px dashed;
         }
+
+        .text-step-number {
+            color: #f8f9fa;
+            font-weight: 200;
+            white-space: nowrap;
+            @extend .font-16;
+        }
         .text-step-hired {
             display: inline-block;
             margin-top: 0;
@@ -714,12 +733,7 @@ body {
             color: #015b65;
             width: 100%;
             text-align: center;
-            .text-step-number {
-                color: #022528;
-                font-weight: 300;
-                white-space: nowrap;
-                @extend .font-16;
-            }
+
             .count-tracking-step {
                 font-weight: 700;
                 @extend .font-16;
@@ -751,7 +765,7 @@ body {
             display: inline-block;
             align-items: center;
             padding: 2px 5px;
-            background: #03515959;
+            background: #a7c2c5;
             color: #fff;
             @extend .font-14;
             line-height: 10px;
@@ -978,6 +992,11 @@ body {
         .no-data {
             display: inline-block;
             max-width: 120px;
+        }
+        td {
+            &:first-child {
+                vertical-align: middle;
+            }
         }
     }
     .icon {

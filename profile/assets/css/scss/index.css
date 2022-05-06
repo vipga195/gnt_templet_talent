@@ -243,7 +243,7 @@ body {
   .content .profile-name:not(:first-child) {
     margin-top: 8px; }
   .content .major-skill {
-    max-width: calc(100% - 22px); }
+    max-width: 440px; }
   .content .major .icon {
     width: 15px;
     margin-right: 7px; }
